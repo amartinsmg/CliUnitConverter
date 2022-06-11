@@ -7,7 +7,6 @@ var
   var
     m: Real;
   begin
-
     case inputUnit of
       1: m := value; // m
       2: m := value / 1000; // mm
