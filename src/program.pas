@@ -1,11 +1,11 @@
-program UnitConverter;
+PROGRAM UnitConverter;
 var 
-  opcode, again, inputUnit, outputUnit: integer;
-  value: real;
+  opcode, again, inputUnit, outputUnit: Integer;
+  value, result: Real;
 
-  function Length(inputUnit, outputUnit: integer; value: real) :real;
+  function Length(inputUnit, outputUnit: Integer; value: Real) :Real;
   var
-    m: real;
+    m: Real;
   begin
 
     case inputUnit of
@@ -30,9 +30,9 @@ var
     end;
   end;
 
-  function Area(inputUnit, outputUnit: integer; value: real) :real;
+  function Area(inputUnit, outputUnit: Integer; value: Real) :Real;
   var
-    m2: real;
+    m2: Real;
   begin
     case inputUnit of
       1: m2 := value; // m2
@@ -52,8 +52,8 @@ var
     end;
   end;
 
-  function Volume(inputUnit, outputUnit: integer; value: real) :real;
-  var m3: real;
+  function Volume(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var m3: Real;
   begin
     case inputUnit of
       1: m3 := value; // m3
@@ -75,8 +75,8 @@ var
     end;
   end;
 
-  function Mass(inputUnit, outputUnit: integer; value: real) :real;
-  var kg: real;
+  function Mass(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var kg: Real;
   begin
     case inputUnit of
       1: kg := value; // kg
@@ -94,8 +94,8 @@ var
     end;
   end;
 
-  function Pressure(inputUnit, outputUnit: integer; value: real) :real;
-  var Pa : real;
+  function Pressure(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var Pa : Real;
   begin
     case inputUnit of
       1: Pa := value; // Pa
@@ -111,63 +111,65 @@ var
     end;
   end;
 
-  function Time(inputUnit, outputUnit: integer; value: real) :real;
-  var s: real;
+  function Time(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var s: Real;
   begin
     case inputUnit of
       1: s := value; // s
       2: s := value / 0.01667; // min
       3: s := value / 2.778E-4; // h
-      4: s := value / 1.1574E-5; // day
-      5: s := value / 3.171E-8; // year
+      4: s := value / 1.1574E-5; // d
+      5: s := value / 3.171E-8; // y
     end;
     case outputUnit of
       1: Time := s; // s
       2: Time := s * 0.01667; // min
       3: Time := s * 2.778E-4; // h
-      4: Time := s * 1.1574E-5; // day
-      5: Time := s * 3.171E-8; // year
+      4: Time := s * 1.1574E-5; // d
+      5: Time := s * 3.171E-8; // y
     end;
   end;
 
-  function Speed(inputUnit, outputUnit: integer; value: real) :real;
-  var m_s: real;
+  function Speed(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var m_s: Real;
   begin
     case inputUnit of
       1: m_s := value; // m/s
-      2: m_s := value / 3.6; // km/h
-      3: m_s := value / 3.28084; // ft/s
+      2: m_s := value / 196.8503937; // ft/min
+      3: m_s := value / 3.6; // km/h
       4: m_s := value / 2.23694; // mi/h
       5: m_s := value / 1.94384; // kn
     end;
     case outputUnit of
       1: Speed := m_s; // m/s
-      2: Speed := m_s * 3.6; // km/h
-      3: Speed := m_s * 3.28084; // ft/s
+      2: Speed := m_s * 196.8503937; // ft/min
+      3: Speed := m_s * 3.6; // km/h
       4: Speed := m_s * 2.23694; // mi/h
       5: Speed := m_s * 1.94384; // kn
     end;
   end;
 
-  function Acceleration(inputUnit, outputUnit: integer; value: real) :real;
-  var m_s2 : real;
+  function Acceleration(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var m_s2 : Real;
   begin
     case inputUnit of
       1: m_s2 := value; // m/s2
-      2: m_s2 := value / 12960; // km/h2
+      2: m_s2 := value / 3.6; // km/hs
       3: m_s2 := value / 3.280839895; // ft/s2
-      4: m_s2 := value / 0.1019716213; // G
+      4: m_s2 := value / 1.94; // kn/s
+      5: m_s2 := value / 0.1019716213; // G
     end;
     case outputUnit of
       1: Acceleration := m_s2; // m/s2
-      2: Acceleration := m_s2 * 12960; // km/h2
-      3: Acceleration := m_s2 * 3.280839895; // ft
-      4: Acceleration := m_s2 * 0.1019716213; // G
+      2: Acceleration := m_s2 * 3.6; // km/hs
+      3: Acceleration := m_s2 * 3.280839895; // ft/s2
+      4: Acceleration := m_s2 * 1.94; // kn/s
+      5: Acceleration := m_s2 * 0.1019716213; // G
     end;
   end;
 
-  function Force(inputUnit, outputUnit: integer; value: real) :real;
-  var N : real;
+  function Force(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var N : Real;
   begin
     case inputUnit of
       1: N := value; // N
@@ -183,23 +185,23 @@ var
     end;
   end;
 
-  function Temperature(inputUnit, outputUnit: integer; value: real) :real;
-  var k: real;
+  function Temperature(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var K: Real;
   begin
     case inputUnit of
-      1: k := value; // kelvin
-      2: k := value + 273; // celsius
-      3: k := (value - 32) * 5/9 + 273 ; // fahrenheit
+      1: K := value; // kelvin
+      2: K := value + 273; // celsius
+      3: K := (value - 32) * 5/9 + 273 ; // fahrenheit
     end;
     case outputUnit of
-      1: Temperature := k; // kelvin
-      2: Temperature := k * 3.6; // celsius
-      3: Temperature := (k - 273) * 9/5 + 32; // fahrenheit
+      1: Temperature := K; // kelvin
+      2: Temperature := K * 3.6; // celsius
+      3: Temperature := (K - 273) * 9/5 + 32; // fahrenheit
     end;
   end;
 
-  function Energy(inputUnit, outputUnit: integer; value: real) :real;
-  var J : real;
+  function Energy(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var J : Real;
   begin
     case inputUnit of
       1: J := value; // J
@@ -215,8 +217,8 @@ var
     end;
   end;
 
-  function Power(inputUnit, outputUnit: integer; value: real) :real;
-  var W : real;
+  function Power(inputUnit, outputUnit: Integer; value: Real) :Real;
+  var W : Real;
   begin
     case inputUnit of
       1: W := value; // W
@@ -233,7 +235,7 @@ var
       5: Power := W * 0.001; // kW
     end;
   end;
- begin
+begin
   repeat
     writeln('           UNIT CONVERTER          ');
     writeln('               *****               ');
@@ -254,6 +256,7 @@ var
     writeln('               *****               ');
     write('Enter a code: ');
     read(opcode);
+    writeln(' ');
     case opcode of
       1: begin
         writeln('               LENGTH              ');
@@ -267,50 +270,141 @@ var
         writeln(' kilometer (km)             6      ');
         writeln(' mile (mi)                  7      ');
         writeln(' nautical mile (nmi)        8      ');
-        writeln('               *****               ');
-        write('Convert from (numeric code): ');  
-        read(inputUnit);
-        write('to (numeric code): ');
-        read(outputUnit);
-        write('Enter the value do you want to convert: ');
-        read(value);
-        writeln('result = ', Length(inputUnit, outputUnit, value));
       end;
       2: begin
-        
+        writeln('                AREA              ');
+        writeln('               ******              ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' square meter (m^2)         1      ');
+        writeln(' square inch (in^2)         2      ');
+        writeln(' square foot (ft^2)         3      ');
+        writeln(' hectare (ha)               4      ');
+        writeln(' square kilometer (km^2)    5      ');
+        writeln(' square mile (mi^2)         6      ');
       end;
       3: begin
-        
+        writeln('               VOLUME              ');
+        writeln('               ******              ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' cubic meter (m^3)          1      ');
+        writeln(' milliliter (mL or cm^3)    2      ');
+        writeln(' cubic inch (in^3)          3      ');
+        writeln(' fluid ounce (fl oz)        4      ');
+        writeln(' liter (L)                  5      ');
+        writeln(' imperial gallon (imp gal)  6      ');
+        writeln(' cubic foot (ft^3)          7      ');
       end;
       4: begin
-        
+        writeln('                MASS              ');
+        writeln('               ******              ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' kilogram (kg)              1      ');
+        writeln(' milligram (mg)             2      ');
+        writeln(' gram (g)                   3      ');
+        writeln(' ounce (oz)                 4      ');
+        writeln(' pound (lb)                 5      ');
       end;
       5: begin
-        
+        writeln('              PRESSURE              ');
+        writeln('               ******              ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' pascal (Pa)                1      ');
+        writeln(' psi                        2      ');
+        writeln(' bar                        3      ');
+        writeln(' standard atmosphere (atm)  4      ');
       end;
       6: begin
-
+        writeln('                TIME              ');
+        writeln('               ******              ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' second (s)                 1      ');
+        writeln(' minute (min)               2      ');
+        writeln(' hour (h)                   3      ');
+        writeln(' day (d)                    4      ');
+        writeln(' year (y)                   5      ');
       end;
       7: begin
-        
+        writeln('               SPEED               ');
+        writeln('               *****               ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' meter/second (m/s)         1      ');
+        writeln(' foot/minute (ft/min)       2      ');
+        writeln(' kilometer/hour (km/h)      3      ');
+        writeln(' mile/hour (m/hi)           4      ');
+        writeln(' knot (kn or kt)            5      ');
       end;
       8: begin
-        
+        writeln('            ACCELERATION           ');
+        writeln('               ******              ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' meter/square second (m/s^2)    1  ');
+        writeln(' kilometer/hour*second (km/h*s) 2  ');
+        writeln(' foot/square second (ft/s^2)    3  ');
+        writeln(' knot/second (kn/s or kt/s)     4  ');
+        writeln(' acceleration of gravity (G)    5  ');
       end;
       9: begin
-        
+        writeln('               FORCE               ');
+        writeln('               *****               ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' newton (N)                 1      ');
+        writeln(' dyne (dyn)                 2      ');
+        writeln(' pound-force (lbf)          3      ');
+        writeln(' kilometer-force (kmf)      4      ');
       end;
       10: begin
-        
+        writeln('            TEMPERATURE            ');
+        writeln('               *****               ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' kelvin (k)                 1      ');
+        writeln(' Celsius (°C)               2      ');
+        writeln(' Fahrenheit (°F)            3      ');
       end;
       11: begin
-        
+        writeln('               ENERGY              ');
+        writeln('               ******              ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' joule (J)                  1      ');
+        writeln(' kilojoule (kJ)             2      ');
+        writeln(' kilocalorie (kcal)         3      ');
+        writeln(' kilowatt/hour (kw/h)       4      ');
       end;
       12: begin
-        
+        writeln('               POWER               ');
+        writeln('               *****               ');
+        writeln(' UNIT                  NUMERIC CODE');
+        writeln(' watt (W)                   1      ');
+        writeln(' kilojoule/hour (kJ/h)      2      ');
+        writeln(' hoursepower (hp)           3      ');
+        writeln(' kilowatt (kW)              4      ');
       end;
     end;
+    writeln(' ');
+    write('Convert from (numeric code): ');  
+    read(inputUnit);
+    write('to (numeric code): ');
+    read(outputUnit);
+    write('Enter the value do you want to convert: ');
+    read(value);
+    writeln('');
+    case opcode of
+      1: result := Length(inputUnit, outputUnit, value);
+      2: result := Area(inputUnit, outputUnit, value);
+      3: result := Volume(inputUnit, outputUnit, value);
+      4: result := Mass(inputUnit, outputUnit, value);
+      5: result := Pressure(inputUnit, outputUnit, value);
+      6: result := Time(inputUnit, outputUnit, value);
+      7: result := Speed(inputUnit, outputUnit, value);
+      8: result := Acceleration(inputUnit, outputUnit, value);
+      9: result := Force(inputUnit, outputUnit, value);
+      10: result := Temperature(inputUnit, outputUnit, value);
+      11: result := Energy(inputUnit, outputUnit, value);
+      12: result := Power(inputUnit, outputUnit, value);
+    end;
+    writeln('result = ', result);
+    writeln(' ');
     writeln('Do you want to do another conversion? (1/0)');
     readln(again);
-  until again = 0
+    writeln(' ');
+  until again = 0;
 end.
