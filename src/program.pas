@@ -1,4 +1,4 @@
-PROGRAM UnitConverter;
+program UnitConverter;
 var 
   opcode, again, inputUnit, outputUnit: Integer;
   value, result: Real;
