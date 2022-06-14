@@ -2,7 +2,7 @@ unit Calculate;
 
 interface
 
-function Convert(inputUnit, outputUnit: Integer; units: Array of Real ; value: Real): Real;
+function Convert(units: Array of Real; inputUnit, outputUnit: Integer; value: Real): Real;
 function Length(inputUnit, outputUnit: Integer; value: Real) :Real;
 function Area(inputUnit, outputUnit: Integer; value: Real) :Real;
 function Volume(inputUnit, outputUnit: Integer; value: Real) :Real;
