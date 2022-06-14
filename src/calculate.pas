@@ -2,7 +2,6 @@ unit Calculate;
 
 interface
 
-function Convert(units: Array of Real; inputUnit, outputUnit: Integer; value: Real): Real;
 function Length(inputUnit, outputUnit: Integer; value: Real) :Real;
 function Area(inputUnit, outputUnit: Integer; value: Real) :Real;
 function Volume(inputUnit, outputUnit: Integer; value: Real) :Real;
@@ -27,7 +26,7 @@ begin
 end;
 
 function Length(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..7] of Real =
+const units: Array[0..7] of Real =
   (1 (* m *),
   1000 (* mm *),
   100 (* cm *),
@@ -41,7 +40,7 @@ begin
 end;
 
 function Area(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..5] of Real =
+const units: Array[0..5] of Real =
   (1 (* m2 *),
   1550 (* in2 *),
   10.7639  (* ft2 *),
@@ -53,7 +52,7 @@ begin
 end;
 
 function Volume(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..6] of Real =
+const units: Array[0..6] of Real =
   (1 (* m3 *),
   1E+6 (* mL *),
   61023.7 (* in3 *),
@@ -66,7 +65,7 @@ begin
 end;
 
 function Mass(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..4] of Real =
+const units: Array[0..4] of Real =
   (1 (* kg *),
   1E+6 (* mg *),
   1000 (* g *),
@@ -77,7 +76,7 @@ begin
 end;
 
 function Pressure(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..3] of Real =
+const units: Array[0..3] of Real =
   (1 (* Pa *),
   1.45038E-4 (* psi *),
   1E-5 (* bar *),
@@ -87,7 +86,7 @@ begin
 end;
 
 function Time(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..4] of Real =
+const units: Array[0..4] of Real =
   (1 (* s *),
   0.01667 (* min *),
   2.778E-4 (* h *),
@@ -98,7 +97,7 @@ begin
 end;
 
 function Speed(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..4] of Real =
+const units: Array[0..4] of Real =
   (1 (* m/s *),
   196.8503937 (* ft/min *),
   3.6 (* km/h *),
@@ -109,7 +108,7 @@ begin
 end;
 
 function Acceleration(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..4] of Real =
+const units: Array[0..4] of Real =
   (1 (* m/s2 *),
   3.6 (* km/hs *),
   3.280839895 (* ft/s2 *),
@@ -120,7 +119,7 @@ begin
 end;
 
 function Force(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..3] of Real =
+const units: Array[0..3] of Real =
   (1 (* N *),
   1E+5 (* dyn *),
   0.2248089431 (* lbf *),
@@ -145,7 +144,7 @@ begin
 end;
 
 function Energy(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..3] of Real =
+const units: Array[0..3] of Real =
   (1 (* J *),
   0.0001 (* kJ *),
   2.39006E-4 (* kcal *),
@@ -155,7 +154,7 @@ begin
 end;
 
 function Power(inputUnit, outputUnit: Integer; value: Real) :Real;
-var units: Array[0..4] of Real =
+const units: Array[0..4] of Real =
   (1 (* W *),
   3.6 (* kJ/h *),
   0.8598452279 (* kcal/h *),
