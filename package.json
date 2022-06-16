@@ -5,8 +5,7 @@
   "author": "amartinsmg",
   "license": "MIT",
   "scripts": {
-    "build:exe": "fpc -Twin32 src/program.pas  -FE\"build\" -o\"program.exe\"",
-    "build:wasm": "wat2wasm src/calculate.wat -o build/calculate.wasm"
+    "build": "([ -d \"build\" ] || mkdir build) && wat2wasm src/calculate.wat -o build/calculate.wasm"
   },
   "dependencies": {
     "wat2wasm": "^3.0.0"

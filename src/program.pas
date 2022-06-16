@@ -2,7 +2,7 @@ program UnitConverter;
 uses Calculate;
 
 var 
-  opcode, again, inputUnit, outputUnit: Integer;
+  opcode, again, inputUnit, outputUnit: LongInt;
   value, result: Real;
 
 begin
