@@ -138,7 +138,7 @@ begin
   end;
   case outputUnit of
     1: Temperature := K; // kelvin
-    2: Temperature := K * 3.6; // celsius
+    2: Temperature := K - 273; // celsius
     3: Temperature := (K - 273) * 9/5 + 32; // fahrenheit
   end;
 end;
@@ -148,7 +148,7 @@ const units: Array[0..3] of Real =
   (1 (* J *),
   0.0001 (* kJ *),
   2.39006E-4 (* kcal *),
-  2.7778e-7 (* kw/h *));
+  2.7778e-7 (* kW/h *));
 begin
   Energy := Convert(units, inputUnit, outputUnit, value);
 end;
