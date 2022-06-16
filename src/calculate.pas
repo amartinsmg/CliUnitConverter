@@ -2,18 +2,18 @@ unit Calculate;
 
 interface
 
-function Length(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Area(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Volume(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Mass(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Pressure(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Time(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Speed(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Acceleration(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Force(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Temperature(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Energy(inputUnit, outputUnit: Integer; value: Real) :Real;
-function Power(inputUnit, outputUnit: Integer; value: Real) :Real;
+function Length(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Area(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Volume(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Mass(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Pressure(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Time(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Speed(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Acceleration(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Force(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Temperature(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Energy(inputUnit, outputUnit: LongInt; value: Real) :Real;
+function Power(inputUnit, outputUnit: LongInt; value: Real) :Real;
 
 implementation
 

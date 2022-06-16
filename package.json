@@ -1,0 +1,14 @@
+{
+  "name": "unitconverter",
+  "version": "0.9.0",
+  "repository": "https://github.com/amartinsmg/UnitConverter.git",
+  "author": "amartinsmg",
+  "license": "MIT",
+  "scripts": {
+    "build:exe": "fpc -Twin32 src/program.pas  -FE\"build\" -o\"program.exe\"",
+    "build:wasm": "wat2wasm src/calculate.wat -o build/calculate.wasm"
+  },
+  "devDependencies": {
+    "wat2wasm": "^3.0.0"
+  }
+}
