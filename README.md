@@ -6,5 +6,7 @@ The WebAssembly version was compiled using FreePascal and converted to text form
 
 and can be converted to binary format using wat2wasm with this commands:
 
-<code>npm install
-npm run build</code>
+````
+npm install
+npm run build
+````
