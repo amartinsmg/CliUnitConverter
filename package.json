@@ -9,6 +9,7 @@
     "build:wasm": "wat2wasm src/calculate.wat -o build/calculate.wasm"
   },
   "devDependencies": {
+    "wasm2wat": "^1.1.1",
     "wat2wasm": "^3.0.0"
   }
 }
