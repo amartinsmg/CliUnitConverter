@@ -177,7 +177,7 @@
                     f64.store
                     br 5 (;@3;)
                   end
-                  f64.const 0x1.3af5c28f5c28fp+5 (;=39.37;)
+                  f64.const 0x1.3af5e74299d88p+5 (;=39.3701;)
                   local.set 5
                   local.get 6
                   i32.const 12
@@ -193,7 +193,7 @@
                   f64.store
                   br 4 (;@3;)
                 end
-                f64.const 0x1.a3d70a3d70a3dp+1 (;=3.28;)
+                f64.const 0x1.a3f290abb44e5p+1 (;=3.28084;)
                 local.set 5
                 local.get 6
                 i32.const 12
@@ -225,7 +225,7 @@
               f64.store
               br 2 (;@3;)
             end
-            f64.const 0x1.45953586ca8ap-11 (;=0.000621;)
+            f64.const 0x1.45c700fd4d6a9p-11 (;=0.000621371;)
             local.set 5
             local.get 6
             i32.const 12
@@ -241,7 +241,7 @@
             f64.store
             br 1 (;@3;)
           end
-          f64.const 0x1.1b1d92b7fe08bp-11 (;=0.00054;)
+          f64.const 0x1.1b17cd3ffe0bap-11 (;=0.000539957;)
           local.set 5
           local.get 6
           i32.const 12
@@ -399,7 +399,7 @@
                     f64.store
                     br 6 (;@2;)
                   end
-                  f64.const 0x1.3af5c28f5c28fp+5 (;=39.37;)
+                  f64.const 0x1.3af5e74299d88p+5 (;=39.3701;)
                   local.set 5
                   local.get 5
                   local.get 6
@@ -415,7 +415,7 @@
                   f64.store
                   br 5 (;@2;)
                 end
-                f64.const 0x1.a3d70a3d70a3dp+1 (;=3.28;)
+                f64.const 0x1.a3f290abb44e5p+1 (;=3.28084;)
                 local.set 5
                 local.get 5
                 local.get 6
@@ -447,7 +447,7 @@
               f64.store
               br 3 (;@2;)
             end
-            f64.const 0x1.45953586ca8ap-11 (;=0.000621;)
+            f64.const 0x1.45c700fd4d6a9p-11 (;=0.000621371;)
             local.set 5
             local.get 5
             local.get 6
@@ -463,7 +463,7 @@
             f64.store
             br 2 (;@2;)
           end
-          f64.const 0x1.1b1d92b7fe08bp-11 (;=0.00054;)
+          f64.const 0x1.1b17cd3ffe0bap-11 (;=0.000539957;)
           local.set 5
           local.get 5
           local.get 6
@@ -627,7 +627,7 @@
                   f64.store
                   br 4 (;@3;)
                 end
-                f64.const 0x1.5871de69ad42cp+3 (;=10.7639;)
+                f64.const 0x1.5871f36262cbap+3 (;=10.7639;)
                 local.set 5
                 local.get 6
                 i32.const 12
@@ -675,7 +675,7 @@
             f64.store
             br 1 (;@3;)
           end
-          f64.const 0x1.9e925c2082d08p-22 (;=3.861e-07;)
+          f64.const 0x1.9e92e8dd4ed9fp-22 (;=3.86102e-07;)
           local.set 5
           local.get 6
           i32.const 12
@@ -795,7 +795,7 @@
                   f64.store
                   br 5 (;@2;)
                 end
-                f64.const 0x1.5871de69ad42cp+3 (;=10.7639;)
+                f64.const 0x1.5871f36262cbap+3 (;=10.7639;)
                 local.set 5
                 local.get 5
                 local.get 6
@@ -843,7 +843,7 @@
             f64.store
             br 2 (;@2;)
           end
-          f64.const 0x1.9e925c2082d08p-22 (;=3.861e-07;)
+          f64.const 0x1.9e92e8dd4ed9fp-22 (;=3.86102e-07;)
           local.set 5
           local.get 5
           local.get 6
@@ -1018,7 +1018,7 @@
                     f64.store
                     br 5 (;@3;)
                   end
-                  f64.const 0x1.dcbf666666666p+15 (;=61023.7;)
+                  f64.const 0x1.dcbf7cf95d4e9p+15 (;=61023.7;)
                   local.set 5
                   local.get 6
                   i32.const 12
@@ -1034,7 +1034,7 @@
                   f64.store
                   br 4 (;@3;)
                 end
-                f64.const 0x1.12f6333333333p+15 (;=35195.1;)
+                f64.const 0x1.12f60b9f559b4p+15 (;=35195;)
                 local.set 5
                 local.get 6
                 i32.const 12
@@ -1066,7 +1066,7 @@
               f64.store
               br 2 (;@3;)
             end
-            f64.const 0x1.b7f020c49ba5ep+7 (;=219.969;)
+            f64.const 0x1.b7f04039abf34p+7 (;=219.969;)
             local.set 5
             local.get 6
             i32.const 12
@@ -1082,7 +1082,7 @@
             f64.store
             br 1 (;@3;)
           end
-          f64.const 0x1.1a84816f0068ep+5 (;=35.3147;)
+          f64.const 0x1.1a8471b478423p+5 (;=35.3147;)
           local.set 5
           local.get 6
           i32.const 12
@@ -1213,7 +1213,7 @@
                     f64.store
                     br 6 (;@2;)
                   end
-                  f64.const 0x1.dcbf666666666p+15 (;=61023.7;)
+                  f64.const 0x1.dcbf7cf95d4e9p+15 (;=61023.7;)
                   local.set 5
                   local.get 5
                   local.get 6
@@ -1229,7 +1229,7 @@
                   f64.store
                   br 5 (;@2;)
                 end
-                f64.const 0x1.12f6333333333p+15 (;=35195.1;)
+                f64.const 0x1.12f60b9f559b4p+15 (;=35195;)
                 local.set 5
                 local.get 5
                 local.get 6
@@ -1261,7 +1261,7 @@
               f64.store
               br 3 (;@2;)
             end
-            f64.const 0x1.b7f020c49ba5ep+7 (;=219.969;)
+            f64.const 0x1.b7f04039abf34p+7 (;=219.969;)
             local.set 5
             local.get 5
             local.get 6
@@ -1277,7 +1277,7 @@
             f64.store
             br 2 (;@2;)
           end
-          f64.const 0x1.1a84816f0068ep+5 (;=35.3147;)
+          f64.const 0x1.1a8471b478423p+5 (;=35.3147;)
           local.set 5
           local.get 5
           local.get 6
@@ -1308,6 +1308,386 @@
     i64.const 8838774265073193736
     i64.const 4746035544788347654
     i64.const 4627030342365939791
+    drop
+    drop
+    drop
+    drop
+    global.get $__stack_pointer
+    local.set 7
+    local.get 7
+    i32.const 48
+    i32.sub
+    local.set 6
+    local.get 6
+    global.set $__stack_pointer
+    local.get 6
+    i32.const 4
+    i32.add
+    local.get 0
+    i32.store
+    local.get 6
+    i32.const 8
+    i32.add
+    local.get 1
+    i32.store
+    local.get 6
+    i32.const 12
+    i32.add
+    local.get 2
+    f64.store
+    block  ;; label = @1
+      block  ;; label = @2
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              block  ;; label = @6
+                block  ;; label = @7
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      local.get 6
+                      i32.const 4
+                      i32.add
+                      i32.load
+                      local.set 3
+                      local.get 3
+                      i32.const 1
+                      i32.lt_s
+                      br_if 6 (;@3;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 0 (;@9;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 1 (;@8;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 2 (;@7;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 3 (;@6;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 4 (;@5;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 5 (;@4;)
+                      br 6 (;@3;)
+                    end
+                    local.get 6
+                    i32.const 32
+                    i32.add
+                    local.get 6
+                    i32.const 12
+                    i32.add
+                    f64.load
+                    f64.store
+                    br 5 (;@3;)
+                  end
+                  f64.const 0x1.e848p+19 (;=1e+06;)
+                  local.set 5
+                  local.get 6
+                  i32.const 12
+                  i32.add
+                  f64.load
+                  local.get 5
+                  f64.div
+                  local.set 5
+                  local.get 6
+                  i32.const 32
+                  i32.add
+                  local.get 5
+                  f64.store
+                  br 4 (;@3;)
+                end
+                f64.const 0x1.f4p+9 (;=1000;)
+                local.set 5
+                local.get 6
+                i32.const 12
+                i32.add
+                f64.load
+                local.get 5
+                f64.div
+                local.set 5
+                local.get 6
+                i32.const 32
+                i32.add
+                local.get 5
+                f64.store
+                br 3 (;@3;)
+              end
+              f64.const 0x1.1a3111f0c34c2p+5 (;=35.274;)
+              local.set 5
+              local.get 6
+              i32.const 12
+              i32.add
+              f64.load
+              local.get 5
+              f64.div
+              local.set 5
+              local.get 6
+              i32.const 32
+              i32.add
+              local.get 5
+              f64.store
+              br 2 (;@3;)
+            end
+            f64.const 0x1.1a30fcf80dc33p+1 (;=2.20462;)
+            local.set 5
+            local.get 6
+            i32.const 12
+            i32.add
+            f64.load
+            local.get 5
+            f64.div
+            local.set 5
+            local.get 6
+            i32.const 32
+            i32.add
+            local.get 5
+            f64.store
+            br 1 (;@3;)
+          end
+          f64.const 0x1.0624dd2f1a9fcp-10 (;=0.001;)
+          local.set 5
+          local.get 6
+          i32.const 12
+          i32.add
+          f64.load
+          local.get 5
+          f64.div
+          local.set 5
+          local.get 6
+          i32.const 32
+          i32.add
+          local.get 5
+          f64.store
+          br 0 (;@3;)
+        end
+        block  ;; label = @3
+          block  ;; label = @4
+            block  ;; label = @5
+              block  ;; label = @6
+                block  ;; label = @7
+                  block  ;; label = @8
+                    block  ;; label = @9
+                      local.get 6
+                      i32.const 8
+                      i32.add
+                      i32.load
+                      local.set 3
+                      local.get 3
+                      i32.const 1
+                      i32.lt_s
+                      br_if 7 (;@2;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 0 (;@9;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 1 (;@8;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 2 (;@7;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 3 (;@6;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 4 (;@5;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 5 (;@4;)
+                      br 7 (;@2;)
+                    end
+                    local.get 6
+                    i32.const 24
+                    i32.add
+                    local.get 6
+                    i32.const 32
+                    i32.add
+                    f64.load
+                    f64.store
+                    br 6 (;@2;)
+                  end
+                  f64.const 0x1.e848p+19 (;=1e+06;)
+                  local.set 5
+                  local.get 5
+                  local.get 6
+                  i32.const 32
+                  i32.add
+                  f64.load
+                  f64.mul
+                  local.set 5
+                  local.get 6
+                  i32.const 24
+                  i32.add
+                  local.get 5
+                  f64.store
+                  br 5 (;@2;)
+                end
+                f64.const 0x1.f4p+9 (;=1000;)
+                local.set 5
+                local.get 5
+                local.get 6
+                i32.const 32
+                i32.add
+                f64.load
+                f64.mul
+                local.set 5
+                local.get 6
+                i32.const 24
+                i32.add
+                local.get 5
+                f64.store
+                br 4 (;@2;)
+              end
+              f64.const 0x1.1a3111f0c34c2p+5 (;=35.274;)
+              local.set 5
+              local.get 5
+              local.get 6
+              i32.const 32
+              i32.add
+              f64.load
+              f64.mul
+              local.set 5
+              local.get 6
+              i32.const 24
+              i32.add
+              local.get 5
+              f64.store
+              br 3 (;@2;)
+            end
+            f64.const 0x1.1a30fcf80dc33p+1 (;=2.20462;)
+            local.set 5
+            local.get 5
+            local.get 6
+            i32.const 32
+            i32.add
+            f64.load
+            f64.mul
+            local.set 5
+            local.get 6
+            i32.const 24
+            i32.add
+            local.get 5
+            f64.store
+            br 2 (;@2;)
+          end
+          f64.const 0x1.0624dd2f1a9fcp-10 (;=0.001;)
+          local.set 5
+          local.get 5
+          local.get 6
+          i32.const 32
+          i32.add
+          f64.load
+          f64.mul
+          local.set 5
+          local.get 6
+          i32.const 24
+          i32.add
+          local.get 5
+          f64.store
+          br 1 (;@2;)
+        end
+      end
+    end
+    local.get 6
+    i32.const 24
+    i32.add
+    f64.load
+    local.get 7
+    global.set $__stack_pointer
+    return)
+  (func (;4;) (type 0) (param i32 i32 f64) (result f64)
+    (local i32 i32 f64 i32 i32)
+    i64.const 2297836747736121085
+    i64.const 8447718991428814939
+    i64.const 775676762748534530
+    i64.const 5849664397604987098
     drop
     drop
     drop
@@ -1414,7 +1794,7 @@
                   f64.store
                   br 4 (;@3;)
                 end
-                f64.const 0x1.e848p+19 (;=1e+06;)
+                f64.const 0x1.eb8f8599877b1p-8 (;=0.00750062;)
                 local.set 5
                 local.get 6
                 i32.const 12
@@ -1430,7 +1810,7 @@
                 f64.store
                 br 3 (;@3;)
               end
-              f64.const 0x1.f4p+9 (;=1000;)
+              f64.const 0x1.302aaeef051fcp-13 (;=0.000145038;)
               local.set 5
               local.get 6
               i32.const 12
@@ -1446,7 +1826,7 @@
               f64.store
               br 2 (;@3;)
             end
-            f64.const 0x1.1a3126e978d5p+5 (;=35.274;)
+            f64.const 0x1.4f8b588e368f1p-17 (;=1e-05;)
             local.set 5
             local.get 6
             i32.const 12
@@ -1462,7 +1842,7 @@
             f64.store
             br 1 (;@3;)
           end
-          f64.const 0x1.1a30fcf80dc33p+1 (;=2.20462;)
+          f64.const 0x1.4b28d0324cce5p-17 (;=9.86932e-06;)
           local.set 5
           local.get 6
           i32.const 12
@@ -1555,7 +1935,7 @@
                   f64.store
                   br 5 (;@2;)
                 end
-                f64.const 0x1.e848p+19 (;=1e+06;)
+                f64.const 0x1.eb8f8599877b1p-8 (;=0.00750062;)
                 local.set 5
                 local.get 5
                 local.get 6
@@ -1571,278 +1951,6 @@
                 f64.store
                 br 4 (;@2;)
               end
-              f64.const 0x1.f4p+9 (;=1000;)
-              local.set 5
-              local.get 5
-              local.get 6
-              i32.const 32
-              i32.add
-              f64.load
-              f64.mul
-              local.set 5
-              local.get 6
-              i32.const 24
-              i32.add
-              local.get 5
-              f64.store
-              br 3 (;@2;)
-            end
-            f64.const 0x1.1a3126e978d5p+5 (;=35.274;)
-            local.set 5
-            local.get 5
-            local.get 6
-            i32.const 32
-            i32.add
-            f64.load
-            f64.mul
-            local.set 5
-            local.get 6
-            i32.const 24
-            i32.add
-            local.get 5
-            f64.store
-            br 2 (;@2;)
-          end
-          f64.const 0x1.1a30fcf80dc33p+1 (;=2.20462;)
-          local.set 5
-          local.get 5
-          local.get 6
-          i32.const 32
-          i32.add
-          f64.load
-          f64.mul
-          local.set 5
-          local.get 6
-          i32.const 24
-          i32.add
-          local.get 5
-          f64.store
-          br 1 (;@2;)
-        end
-      end
-    end
-    local.get 6
-    i32.const 24
-    i32.add
-    f64.load
-    local.get 7
-    global.set $__stack_pointer
-    return)
-  (func (;4;) (type 0) (param i32 i32 f64) (result f64)
-    (local i32 i32 f64 i32 i32)
-    i64.const 2297836747736121085
-    i64.const 8447718991428814939
-    i64.const 775676762748534530
-    i64.const 5849664397604987098
-    drop
-    drop
-    drop
-    drop
-    global.get $__stack_pointer
-    local.set 7
-    local.get 7
-    i32.const 48
-    i32.sub
-    local.set 6
-    local.get 6
-    global.set $__stack_pointer
-    local.get 6
-    i32.const 4
-    i32.add
-    local.get 0
-    i32.store
-    local.get 6
-    i32.const 8
-    i32.add
-    local.get 1
-    i32.store
-    local.get 6
-    i32.const 12
-    i32.add
-    local.get 2
-    f64.store
-    block  ;; label = @1
-      block  ;; label = @2
-        block  ;; label = @3
-          block  ;; label = @4
-            block  ;; label = @5
-              block  ;; label = @6
-                block  ;; label = @7
-                  local.get 6
-                  i32.const 4
-                  i32.add
-                  i32.load
-                  local.set 3
-                  local.get 3
-                  i32.const 1
-                  i32.lt_s
-                  br_if 4 (;@3;)
-                  local.get 3
-                  local.set 4
-                  local.get 3
-                  i32.const 1
-                  i32.sub
-                  local.set 3
-                  local.get 4
-                  i32.const 1
-                  i32.eq
-                  br_if 0 (;@7;)
-                  local.get 3
-                  local.set 4
-                  local.get 3
-                  i32.const 1
-                  i32.sub
-                  local.set 3
-                  local.get 4
-                  i32.const 1
-                  i32.eq
-                  br_if 1 (;@6;)
-                  local.get 3
-                  local.set 4
-                  local.get 3
-                  i32.const 1
-                  i32.sub
-                  local.set 3
-                  local.get 4
-                  i32.const 1
-                  i32.eq
-                  br_if 2 (;@5;)
-                  local.get 3
-                  local.set 4
-                  local.get 3
-                  i32.const 1
-                  i32.sub
-                  local.set 3
-                  local.get 4
-                  i32.const 1
-                  i32.eq
-                  br_if 3 (;@4;)
-                  br 4 (;@3;)
-                end
-                local.get 6
-                i32.const 32
-                i32.add
-                local.get 6
-                i32.const 12
-                i32.add
-                f64.load
-                f64.store
-                br 3 (;@3;)
-              end
-              f64.const 0x1.302aaeef051fcp-13 (;=0.000145038;)
-              local.set 5
-              local.get 6
-              i32.const 12
-              i32.add
-              f64.load
-              local.get 5
-              f64.div
-              local.set 5
-              local.get 6
-              i32.const 32
-              i32.add
-              local.get 5
-              f64.store
-              br 2 (;@3;)
-            end
-            f64.const 0x1.4f8b588e368f1p-17 (;=1e-05;)
-            local.set 5
-            local.get 6
-            i32.const 12
-            i32.add
-            f64.load
-            local.get 5
-            f64.div
-            local.set 5
-            local.get 6
-            i32.const 32
-            i32.add
-            local.get 5
-            f64.store
-            br 1 (;@3;)
-          end
-          f64.const 0x1.4b27c8504e3cap-17 (;=9.8692e-06;)
-          local.set 5
-          local.get 6
-          i32.const 12
-          i32.add
-          f64.load
-          local.get 5
-          f64.div
-          local.set 5
-          local.get 6
-          i32.const 32
-          i32.add
-          local.get 5
-          f64.store
-          br 0 (;@3;)
-        end
-        block  ;; label = @3
-          block  ;; label = @4
-            block  ;; label = @5
-              block  ;; label = @6
-                block  ;; label = @7
-                  local.get 6
-                  i32.const 8
-                  i32.add
-                  i32.load
-                  local.set 3
-                  local.get 3
-                  i32.const 1
-                  i32.lt_s
-                  br_if 5 (;@2;)
-                  local.get 3
-                  local.set 4
-                  local.get 3
-                  i32.const 1
-                  i32.sub
-                  local.set 3
-                  local.get 4
-                  i32.const 1
-                  i32.eq
-                  br_if 0 (;@7;)
-                  local.get 3
-                  local.set 4
-                  local.get 3
-                  i32.const 1
-                  i32.sub
-                  local.set 3
-                  local.get 4
-                  i32.const 1
-                  i32.eq
-                  br_if 1 (;@6;)
-                  local.get 3
-                  local.set 4
-                  local.get 3
-                  i32.const 1
-                  i32.sub
-                  local.set 3
-                  local.get 4
-                  i32.const 1
-                  i32.eq
-                  br_if 2 (;@5;)
-                  local.get 3
-                  local.set 4
-                  local.get 3
-                  i32.const 1
-                  i32.sub
-                  local.set 3
-                  local.get 4
-                  i32.const 1
-                  i32.eq
-                  br_if 3 (;@4;)
-                  br 5 (;@2;)
-                end
-                local.get 6
-                i32.const 24
-                i32.add
-                local.get 6
-                i32.const 32
-                i32.add
-                f64.load
-                f64.store
-                br 4 (;@2;)
-              end
               f64.const 0x1.302aaeef051fcp-13 (;=0.000145038;)
               local.set 5
               local.get 5
@@ -1875,7 +1983,7 @@
             f64.store
             br 2 (;@2;)
           end
-          f64.const 0x1.4b27c8504e3cap-17 (;=9.8692e-06;)
+          f64.const 0x1.4b280a48cde11p-17 (;=9.86923e-06;)
           local.set 5
           local.get 5
           local.get 6
@@ -2028,7 +2136,7 @@
                 f64.store
                 br 3 (;@3;)
               end
-              f64.const 0x1.234b5ea323861p-12 (;=0.0002778;)
+              f64.const 0x1.234576cf0bb8cp-12 (;=0.000277778;)
               local.set 5
               local.get 6
               i32.const 12
@@ -2044,7 +2152,7 @@
               f64.store
               br 2 (;@3;)
             end
-            f64.const 0x1.845be728e5f4bp-17 (;=1.1574e-05;)
+            f64.const 0x1.845cc30fe4c37p-17 (;=1.15741e-05;)
             local.set 5
             local.get 6
             i32.const 12
@@ -2060,7 +2168,7 @@
             f64.store
             br 1 (;@3;)
           end
-          f64.const 0x1.10630705e2a8ep-25 (;=3.171e-08;)
+          f64.const 0x1.107893eeba812p-25 (;=3.17198e-08;)
           local.set 5
           local.get 6
           i32.const 12
@@ -2169,7 +2277,7 @@
                 f64.store
                 br 4 (;@2;)
               end
-              f64.const 0x1.234b5ea323861p-12 (;=0.0002778;)
+              f64.const 0x1.234576cf0bb8cp-12 (;=0.000277778;)
               local.set 5
               local.get 5
               local.get 6
@@ -2185,7 +2293,7 @@
               f64.store
               br 3 (;@2;)
             end
-            f64.const 0x1.845be728e5f4bp-17 (;=1.1574e-05;)
+            f64.const 0x1.845cc30fe4c37p-17 (;=1.15741e-05;)
             local.set 5
             local.get 5
             local.get 6
@@ -2201,7 +2309,7 @@
             f64.store
             br 2 (;@2;)
           end
-          f64.const 0x1.10630705e2a8ep-25 (;=3.171e-08;)
+          f64.const 0x1.107893eeba812p-25 (;=3.17198e-08;)
           local.set 5
           local.get 5
           local.get 6
@@ -2338,7 +2446,7 @@
                   f64.store
                   br 4 (;@3;)
                 end
-                f64.const 0x1.89b366cd9472fp+7 (;=196.85;)
+                f64.const 0x1.89b366516db0ep+7 (;=196.85;)
                 local.set 5
                 local.get 6
                 i32.const 12
@@ -2479,7 +2587,7 @@
                   f64.store
                   br 5 (;@2;)
                 end
-                f64.const 0x1.89b366cd9472fp+7 (;=196.85;)
+                f64.const 0x1.89b366516db0ep+7 (;=196.85;)
                 local.set 5
                 local.get 5
                 local.get 6
@@ -2593,74 +2701,101 @@
               block  ;; label = @6
                 block  ;; label = @7
                   block  ;; label = @8
+                    block  ;; label = @9
+                      local.get 6
+                      i32.const 4
+                      i32.add
+                      i32.load
+                      local.set 3
+                      local.get 3
+                      i32.const 1
+                      i32.lt_s
+                      br_if 6 (;@3;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 0 (;@9;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 1 (;@8;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 2 (;@7;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 3 (;@6;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 4 (;@5;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 5 (;@4;)
+                      br 6 (;@3;)
+                    end
                     local.get 6
-                    i32.const 4
+                    i32.const 32
                     i32.add
-                    i32.load
-                    local.set 3
-                    local.get 3
-                    i32.const 1
-                    i32.lt_s
-                    br_if 5 (;@3;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 0 (;@8;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 1 (;@7;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 2 (;@6;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 3 (;@5;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 4 (;@4;)
+                    local.get 6
+                    i32.const 12
+                    i32.add
+                    f64.load
+                    f64.store
                     br 5 (;@3;)
                   end
-                  local.get 6
-                  i32.const 32
-                  i32.add
+                  f64.const 0x1.89b366516db0ep+7 (;=196.85;)
+                  local.set 5
                   local.get 6
                   i32.const 12
                   i32.add
                   f64.load
+                  local.get 5
+                  f64.div
+                  local.set 5
+                  local.get 6
+                  i32.const 32
+                  i32.add
+                  local.get 5
                   f64.store
                   br 4 (;@3;)
                 end
@@ -2680,7 +2815,7 @@
                 f64.store
                 br 3 (;@3;)
               end
-              f64.const 0x1.a3f28fca37f21p+1 (;=3.28084;)
+              f64.const 0x1.1e540cc78e9f7p+1 (;=2.23694;)
               local.set 5
               local.get 6
               i32.const 12
@@ -2696,7 +2831,7 @@
               f64.store
               br 2 (;@3;)
             end
-            f64.const 0x1.f0a3d70a3d70ap+0 (;=1.94;)
+            f64.const 0x1.f19f7f8ca8199p+0 (;=1.94384;)
             local.set 5
             local.get 6
             i32.const 12
@@ -2712,7 +2847,7 @@
             f64.store
             br 1 (;@3;)
           end
-          f64.const 0x1.a1acfea9a8555p-4 (;=0.101972;)
+          f64.const 0x1.a1ab4b72c5198p-4 (;=0.10197;)
           local.set 5
           local.get 6
           i32.const 12
@@ -2734,74 +2869,101 @@
               block  ;; label = @6
                 block  ;; label = @7
                   block  ;; label = @8
+                    block  ;; label = @9
+                      local.get 6
+                      i32.const 8
+                      i32.add
+                      i32.load
+                      local.set 3
+                      local.get 3
+                      i32.const 1
+                      i32.lt_s
+                      br_if 7 (;@2;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 0 (;@9;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 1 (;@8;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 2 (;@7;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 3 (;@6;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 4 (;@5;)
+                      local.get 3
+                      local.set 4
+                      local.get 3
+                      i32.const 1
+                      i32.sub
+                      local.set 3
+                      local.get 4
+                      i32.const 1
+                      i32.eq
+                      br_if 5 (;@4;)
+                      br 7 (;@2;)
+                    end
                     local.get 6
-                    i32.const 8
+                    i32.const 24
                     i32.add
-                    i32.load
-                    local.set 3
-                    local.get 3
-                    i32.const 1
-                    i32.lt_s
-                    br_if 6 (;@2;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 0 (;@8;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 1 (;@7;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 2 (;@6;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 3 (;@5;)
-                    local.get 3
-                    local.set 4
-                    local.get 3
-                    i32.const 1
-                    i32.sub
-                    local.set 3
-                    local.get 4
-                    i32.const 1
-                    i32.eq
-                    br_if 4 (;@4;)
+                    local.get 6
+                    i32.const 32
+                    i32.add
+                    f64.load
+                    f64.store
                     br 6 (;@2;)
                   end
-                  local.get 6
-                  i32.const 24
-                  i32.add
+                  f64.const 0x1.89b366516db0ep+7 (;=196.85;)
+                  local.set 5
+                  local.get 5
                   local.get 6
                   i32.const 32
                   i32.add
                   f64.load
+                  f64.mul
+                  local.set 5
+                  local.get 6
+                  i32.const 24
+                  i32.add
+                  local.get 5
                   f64.store
                   br 5 (;@2;)
                 end
@@ -2821,7 +2983,7 @@
                 f64.store
                 br 4 (;@2;)
               end
-              f64.const 0x1.a3f28fca37f21p+1 (;=3.28084;)
+              f64.const 0x1.1e540cc78e9f7p+1 (;=2.23694;)
               local.set 5
               local.get 5
               local.get 6
@@ -2837,7 +2999,7 @@
               f64.store
               br 3 (;@2;)
             end
-            f64.const 0x1.f0a3d70a3d70ap+0 (;=1.94;)
+            f64.const 0x1.f19f7f8ca8199p+0 (;=1.94384;)
             local.set 5
             local.get 5
             local.get 6
@@ -2853,7 +3015,7 @@
             f64.store
             br 2 (;@2;)
           end
-          f64.const 0x1.a1acfea9a8555p-4 (;=0.101972;)
+          f64.const 0x1.a1ab4b72c5198p-4 (;=0.10197;)
           local.set 5
           local.get 5
           local.get 6
@@ -2995,7 +3157,7 @@
               f64.store
               br 2 (;@3;)
             end
-            f64.const 0x1.cc68a193b3dd8p-3 (;=0.224809;)
+            f64.const 0x1.cc63f141205bcp-3 (;=0.2248;)
             local.set 5
             local.get 6
             i32.const 12
@@ -3011,7 +3173,7 @@
             f64.store
             br 1 (;@3;)
           end
-          f64.const 0x1.a1acfea9a8555p-4 (;=0.101972;)
+          f64.const 0x1.a1ab4b72c5198p-4 (;=0.10197;)
           local.set 5
           local.get 6
           i32.const 12
@@ -3109,7 +3271,7 @@
               f64.store
               br 3 (;@2;)
             end
-            f64.const 0x1.cc68a193b3dd8p-3 (;=0.224809;)
+            f64.const 0x1.cc63f141205bcp-3 (;=0.2248;)
             local.set 5
             local.get 5
             local.get 6
@@ -3125,7 +3287,7 @@
             f64.store
             br 2 (;@2;)
           end
-          f64.const 0x1.a1acfea9a8555p-4 (;=0.101972;)
+          f64.const 0x1.a1ab4b72c5198p-4 (;=0.10197;)
           local.set 5
           local.get 5
           local.get 6
@@ -3505,7 +3667,7 @@
                 f64.store
                 br 3 (;@3;)
               end
-              f64.const 0x1.a36e2eb1c432dp-14 (;=0.0001;)
+              f64.const 0x1.0624dd2f1a9fcp-10 (;=0.001;)
               local.set 5
               local.get 6
               i32.const 12
@@ -3537,7 +3699,7 @@
             f64.store
             br 1 (;@3;)
           end
-          f64.const 0x1.2a4395c1f6c28p-22 (;=2.7778e-07;)
+          f64.const 0x1.2a4309052ab91p-22 (;=2.77778e-07;)
           local.set 5
           local.get 6
           i32.const 12
@@ -3619,7 +3781,7 @@
                 f64.store
                 br 4 (;@2;)
               end
-              f64.const 0x1.a36e2eb1c432dp-14 (;=0.0001;)
+              f64.const 0x1.0624dd2f1a9fcp-10 (;=0.001;)
               local.set 5
               local.get 5
               local.get 6
@@ -3651,7 +3813,7 @@
             f64.store
             br 2 (;@2;)
           end
-          f64.const 0x1.2a4395c1f6c28p-22 (;=2.7778e-07;)
+          f64.const 0x1.2a4309052ab91p-22 (;=2.77778e-07;)
           local.set 5
           local.get 5
           local.get 6
@@ -3804,7 +3966,7 @@
                 f64.store
                 br 3 (;@3;)
               end
-              f64.const 0x1.b83da23ae7826p-1 (;=0.859845;)
+              f64.const 0x1.b83e425aee632p-1 (;=0.85985;)
               local.set 5
               local.get 6
               i32.const 12
@@ -3820,7 +3982,7 @@
               f64.store
               br 2 (;@3;)
             end
-            f64.const 0x1.5f8a784037e66p-10 (;=0.00134102;)
+            f64.const 0x1.5f8a542c52188p-10 (;=0.00134102;)
             local.set 5
             local.get 6
             i32.const 12
@@ -3945,7 +4107,7 @@
                 f64.store
                 br 4 (;@2;)
               end
-              f64.const 0x1.b83da23ae7826p-1 (;=0.859845;)
+              f64.const 0x1.b83e425aee632p-1 (;=0.85985;)
               local.set 5
               local.get 5
               local.get 6
@@ -3961,7 +4123,7 @@
               f64.store
               br 3 (;@2;)
             end
-            f64.const 0x1.5f8a784037e66p-10 (;=0.00134102;)
+            f64.const 0x1.5f8a542c52188p-10 (;=0.00134102;)
             local.set 5
             local.get 5
             local.get 6

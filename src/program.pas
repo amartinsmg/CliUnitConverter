@@ -1,180 +1,192 @@
 program UnitConverter;
 uses Calculate;
+label Main, Menu, Conversion;
 
 var 
   Opcode, Again, InputUnit, OutputUnit: LongInt;
   Input, Output: Real;
 
 begin
-  repeat
-    Writeln('                  UNIT CONVERTER                 ');
-    Writeln('                      *****                      ');
-    Writeln('Which conversion do you want to do?'              );
-    Writeln('TYPE                                         CODE');
-    Writeln('Length                                         1 ');
-    Writeln('Area                                           2 ');
-    Writeln('Volume                                         3 ');
-    Writeln('Mass                                           4 ');
-    Writeln('Pressure                                       5 ');
-    Writeln('Time                                           6 ');
-    Writeln('Speed                                          7 ');
-    Writeln('Acceleration                                   8 ');
-    Writeln('Force                                          9 ');
-    Writeln('Temperature                                   10 ');
-    Writeln('Energy                                        11 ');
-    Writeln('Power                                         12 ');
-    Writeln('                       *****                     ');
-    Write('Enter a code: ');
-    Read(Opcode);
-    Writeln(' ');
-    case Opcode of
-      1: begin
-        Writeln('                      LENGTH                     ');
-        Writeln('                      ******                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('meter (m)                                      1 ');
-        Writeln('millimeter (mm)                                2 ');
-        Writeln('centimeter (cm)                                3 ');
-        Writeln('inch (in)                                      4 ');
-        Writeln('foot (ft)                                      5 ');
-        Writeln('kilometer (km)                                 6 ');
-        Writeln('mile (mi)                                      7 ');
-        Writeln('nautical mile (nmi)                            8 ');
-      end;
-      2: begin
-        Writeln('                       AREA                      ');
-        Writeln('                      ******                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('square meter (m^2)                             1 ');
-        Writeln('square inch (in^2)                             2 ');
-        Writeln('square foot (ft^2)                             3 ');
-        Writeln('hectare (ha)                                   4 ');
-        Writeln('square kilometer (km^2)                        5 ');
-        Writeln('square mile (mi^2)                             6 ');
-      end;
-      3: begin
-        Writeln('                      VOLUME                     ');
-        Writeln('                      ******                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('cubic meter (m^3)                              1 ');
-        Writeln('milliliter (mL or cm^3)                        2 ');
-        Writeln('cubic inch (in^3)                              3 ');
-        Writeln('fluid ounce (fl oz)                            4 ');
-        Writeln('liter (L)                                      5 ');
-        Writeln('imperial gallon (imp gal)                      6 ');
-        Writeln('cubic foot (ft^3)                              7 ');
-      end;
-      4: begin
-        Writeln('                       MASS                      ');
-        Writeln('                      ******                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('kilogram (kg)                                  1 ');
-        Writeln('milligram (mg)                                 2 ');
-        Writeln('gram (g)                                       3 ');
-        Writeln('ounce (oz)                                     4 ');
-        Writeln('pound (lb)                                     5 ');
-      end;
-      5: begin
-        Writeln('                     PRESSURE                    ');
-        Writeln('                      ******                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('pascal (Pa)                                    1 ');
-        Writeln('psi                                            2 ');
-        Writeln('bar                                            3 ');
-        Writeln('standard atmosphere (atm)                      4 ');
-      end;
-      6: begin
-        Writeln('                       TIME                      ');
-        Writeln('                      ******                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('second (s)                                     1 ');
-        Writeln('minute (min)                                   2 ');
-        Writeln('hour (h)                                       3 ');
-        Writeln('day (d)                                        4 ');
-        Writeln('year (y)                                       5 ');
-      end;
-      7: begin
-        Writeln('                       SPEED                     ');
-        Writeln('                       *****                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('meter/second (m/s)                             1 ');
-        Writeln('foot/minute (ft/min)                           2 ');
-        Writeln('kilometer/hour (km/h)                          3 ');
-        Writeln('mile/hour (m/hi)                               4 ');
-        Writeln('knot (kn or kt)                                5 ');
-      end;
-      8: begin
-        Writeln('                   ACCELERATION                  ');
-        Writeln('                      ******                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('meter/square second (m/s^2)                    1 ');
-        Writeln('kilometer/hour*second (km/h*s)                 2 ');
-        Writeln('foot/square second (ft/s^2)                    3 ');
-        Writeln('knot/second (kn/s or kt/s)                     4 ');
-        Writeln('acceleration of gravity (G)                    5 ');
-      end;
-      9: begin
-        Writeln('                       FORCE                     ');
-        Writeln('                       *****                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('newton (N)                                     1 ');
-        Writeln('dyne (dyn)                                     2 ');
-        Writeln('pound-force (lbf)                              3 ');
-        Writeln('kilometer-force (kmf)                          4 ');
-      end;
-      10: begin
-        Writeln('                   TEMPERATURE                   ');
-        Writeln('                      *****                      ');
-        Writeln('UNIT                                         CODE');
-        Writeln('kelvin (k)                                     1 ');
-        Writeln('Celsius (o C)                                  2 ');
-        Writeln('Fahrenheit (o F)                               3 ');
-      end;
-      11: begin
-        Writeln('                      ENERGY                     ');
-        Writeln('                      ******                     ');
-        Writeln('UNIT                                         CODE');
-        Writeln('joule (J)                                      1 ');
-        Writeln('kilojoule (kJ)                                 2 ');
-        Writeln('kilocalorie (kcal)                             3 ');
-        Writeln('kilowatt/hour (kw/h)                           4 ');
-      end;
-      12: begin
-        Writeln('                      POWER                      ');
-        Writeln('                      *****                      ');
-        Writeln('UNIT                                         CODE');
-        Writeln('watt (W)                                       1 ');
-        Writeln('kilojoule/hour (kJ/h)                          2 ');
-        Writeln('hoursepower (hp)                               3 ');
-        Writeln('kilowatt (kW)                                  4 ');
-      end;
+  Writeln(' ');
+  Main:
+  Writeln(' UNIT CONVERTER');
+  Writeln(' ');
+  Writeln('  1 -  Length');
+  Writeln('  2 -  Area');
+  Writeln('  3 -  Volume');
+  Writeln('  4 -  Mass');
+  Writeln('  5 -  Pressure');
+  Writeln('  6 -  Time');
+  Writeln('  7 -  Speed');
+  Writeln('  8 -  Acceleration');
+  Writeln('  9 -  Force');
+  Writeln('  10 -  Temperature');
+  Writeln('  11 -  Energy');
+  Writeln('  12 -  Power');
+  Writeln(' ');
+  Writeln(' ');
+  Write(' Enter a code: ');
+  Read(Opcode);
+  Writeln(' ');
+  Writeln(' ');
+  Menu:
+  case Opcode of
+    1: begin
+      Writeln(' LENGTH');
+      Writeln(' ');
+      Writeln('  1 -  meter (m)');
+      Writeln('  2 -  millimeter (mm)');
+      Writeln('  3 -  centimeter (cm)');
+      Writeln('  4 -  inch (in)');
+      Writeln('  5 -  foot (ft)');
+      Writeln('  6 -  kilometer (km)');
+      Writeln('  7 -  mile (mi)');
+      Writeln('  8 -  nautical mile (nmi)');
     end;
-    Writeln(' ');
-    Write('Convert from (code): ');  
-    Read(InputUnit);
-    Write('to (code): ');
-    Read(OutputUnit);
-    Write('Enter the Input do you want to convert: ');
-    Read(Input);
-    Writeln('');
-    case Opcode of
-      1: Output := Length(InputUnit, OutputUnit, Input);
-      2: Output := Area(InputUnit, OutputUnit, Input);
-      3: Output := Volume(InputUnit, OutputUnit, Input);
-      4: Output := Mass(InputUnit, OutputUnit, Input);
-      5: Output := Pressure(InputUnit, OutputUnit, Input);
-      6: Output := Time(InputUnit, OutputUnit, Input);
-      7: Output := Speed(InputUnit, OutputUnit, Input);
-      8: Output := Acceleration(InputUnit, OutputUnit, Input);
-      9: Output := Force(InputUnit, OutputUnit, Input);
-      10: Output := Temperature(InputUnit, OutputUnit, Input);
-      11: Output := Energy(InputUnit, OutputUnit, Input);
-      12: Output := Power(InputUnit, OutputUnit, Input);
+    2: begin
+      Writeln(' AREA');
+      Writeln(' ');
+      Writeln('  1 -  square meter (m^2)');
+      Writeln('  2 -  square inch (in^2)');
+      Writeln('  3 -  square foot (ft^2)');
+      Writeln('  4 -  hectare (ha)');
+      Writeln('  5 -  square kilometer (km^2)');
+      Writeln('  6 -  square mile (mi^2)');
     end;
-    Writeln('Output = ', Output);
-    Writeln(' ');
-    Writeln('Do you want to do another conversion? (1/0)');
-    Readln(Again);
-    Writeln(' ');
-  until Again = 0;
+    3: begin
+      Writeln(' VOLUME');
+      Writeln(' ');
+      Writeln('  1 -  cubic meter (m^3)');
+      Writeln('  2 -  milliliter (mL or cm^3)');
+      Writeln('  3 -  cubic inch (in^3)');
+      Writeln('  4 -  fluid ounce (fl oz)');
+      Writeln('  5 -  liter (L)');
+      Writeln('  6 -  imperial gallon (imp gal)');
+      Writeln('  7 -  cubic foot (ft^3)');
+    end;
+    4: begin
+      Writeln(' MASS');
+      Writeln(' ');
+      Writeln('  1 -  kilogram (kg)');
+      Writeln('  2 -  milligram (mg)');
+      Writeln('  3 -  gram (g)');
+      Writeln('  4 -  ounce (oz)');
+      Writeln('  5 -  pound (lb)');
+      Writeln('  6 -  tonne (t)');
+    end;
+    5: begin
+      Writeln(' PRESSURE');
+      Writeln(' ');
+      Writeln('  1 -  pascal (Pa)');
+      Writeln('  2 -  millimeter of mercury (mmHg)');
+      Writeln('  3 -  psi');
+      Writeln('  4 -  bar');
+      Writeln('  5 -  standard atmosphere (atm)');
+    end;
+    6: begin
+      Writeln(' TIME');
+      Writeln(' ');
+      Writeln('  1 -  second (s)');
+      Writeln('  2 -  minute (min)');
+      Writeln('  3 -  hour (h)');
+      Writeln('  4 -  day (d)');
+      Writeln('  5 -  year (y)');
+    end;
+    7: begin
+      Writeln(' SPEED');
+      Writeln(' ');
+      Writeln('  1 -  meter/second (m/s)');
+      Writeln('  2 -  foot/minute (ft/min)');
+      Writeln('  3 -  kilometer/hour (km/h)');
+      Writeln('  4 -  mile/hour (m/hi)');
+      Writeln('  5 -  knot (kn or kt)');
+    end;
+    8: begin
+      Writeln(' ACCELERATION');
+      Writeln(' ');
+      Writeln('  1 -  meter/square second (m/s^2)');
+      Writeln('  2 -  kilometer/hour*second (km/h*s)');
+      Writeln('  3 -  foot/square second (ft/s^2)');
+      Writeln('  4 -  mile/hour*second (mi/h*s)');
+      Writeln('  5 -  knot/second (kn/s or kt/s)');
+      Writeln('  6 -  acceleration of gravity (G)');
+    end;
+    9: begin
+      Writeln(' FORCE');
+      Writeln(' ');
+      Writeln('  1 -  newton (N)');
+      Writeln('  2 -  dyne (dyn)');
+      Writeln('  3 -  pound-force (lbf)');
+      Writeln('  4 -  kilometer-force (kmf)');
+    end;
+    10: begin
+      Writeln(' TEMPERATURE');
+      Writeln(' ');
+      Writeln('  1 -  kelvin (k)');
+      Writeln('  2 -  Celsius (C)');
+      Writeln('  3 -  Fahrenheit (F)');
+    end;
+    11: begin
+      Writeln(' ENERGY');
+      Writeln(' ');
+      Writeln('  1 -   joule (J)');
+      Writeln('  2 -   kilojoule (kJ)');
+      Writeln('  3 -   kilocalorie (kcal)');
+      Writeln('  4 -   kilowatt/hour (kW/h)');
+    end;
+    12: begin
+      Writeln(' POWER');
+      Writeln(' ');
+      Writeln('  1 - watt (W)');
+      Writeln('  2 - kilojoule/hour (kJ/h)');
+      Writeln('  3 - hoursepower (hp)');
+      Writeln('  4 - kilowatt (kW)');
+    end;
+  end;
+  Writeln(' ');
+  Writeln(' ');
+  Write(' Convert from: ');  
+  Read(InputUnit);
+  Write(' to: ');
+  Read(OutputUnit);
+  Conversion:
+  Write(' Enter the value do you want to convert: ');
+  Read(Input);
+  Writeln(' ');
+  case Opcode of
+    1: Output := Length(InputUnit, OutputUnit, Input);
+    2: Output := Area(InputUnit, OutputUnit, Input);
+    3: Output := Volume(InputUnit, OutputUnit, Input);
+    4: Output := Mass(InputUnit, OutputUnit, Input);
+    5: Output := Pressure(InputUnit, OutputUnit, Input);
+    6: Output := Time(InputUnit, OutputUnit, Input);
+    7: Output := Speed(InputUnit, OutputUnit, Input);
+    8: Output := Acceleration(InputUnit, OutputUnit, Input);
+    9: Output := Force(InputUnit, OutputUnit, Input);
+    10: Output := Temperature(InputUnit, OutputUnit, Input);
+    11: Output := Energy(InputUnit, OutputUnit, Input);
+    12: Output := Power(InputUnit, OutputUnit, Input);
+  end;
+  Write(' Output = ');
+  if Output > 0.001 then Write(Output:20:6)
+  else Write(Output);
+  Writeln(' ');
+  Writeln(' ');
+  Writeln(' OPTIONS');
+  Writeln(' ');
+  Writeln('  1 -  Perform another conversion');
+  Writeln('  2 -  Return to menu');
+  Writeln('  3 -  Return to main menu');
+  Writeln('  4 -  Quit');
+  Writeln(' ');
+  Writeln(' ');
+  Write(' Enter a option: ');
+  Read(Again);
+  Writeln(' ');
+  Writeln(' ');
+  case (Again) of
+    1: goto Conversion;
+    2: goto Menu;
+    3: goto Main;
+  end;
 end.
