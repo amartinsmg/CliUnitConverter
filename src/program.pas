@@ -24,7 +24,6 @@ begin
   Writeln('  11 -  Energy');
   Writeln('  12 -  Power');
   Writeln(' ');
-  Writeln(' ');
   Write(' Enter a code: ');
   Read(Opcode);
   Writeln(' ');
@@ -139,11 +138,11 @@ begin
       Writeln(' ');
       Writeln('  1 - watt (W)');
       Writeln('  2 - kilojoule/hour (kJ/h)');
-      Writeln('  3 - hoursepower (hp)');
-      Writeln('  4 - kilowatt (kW)');
+      Writeln('  3 - kilocalore/hour (kcal/h)');
+      Writeln('  4 - hoursepower (hp)');
+      Writeln('  5 - kilowatt (kW)');
     end;
   end;
-  Writeln(' ');
   Writeln(' ');
   Write(' Convert from: ');  
   Read(InputUnit);
@@ -168,8 +167,9 @@ begin
     12: Output := Power(InputUnit, OutputUnit, Input);
   end;
   Write(' Output = ');
-  if Output > 0.001 then Write(Output:20:6)
+  if (Output > 1E-3) AND (Output < 1E6) then Write(Output:10:3)
   else Write(Output);
+  Writeln(' ');
   Writeln(' ');
   Writeln(' ');
   Writeln(' OPTIONS');
@@ -178,7 +178,6 @@ begin
   Writeln('  2 -  Return to menu');
   Writeln('  3 -  Return to main menu');
   Writeln('  4 -  Quit');
-  Writeln(' ');
   Writeln(' ');
   Write(' Enter a option: ');
   Read(Again);
