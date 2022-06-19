@@ -11,15 +11,15 @@ begin
   Main:
   Writeln(' UNIT CONVERTER');
   Writeln(' ');
-  Writeln('  1 -  Length');
-  Writeln('  2 -  Area');
-  Writeln('  3 -  Volume');
-  Writeln('  4 -  Mass');
-  Writeln('  5 -  Pressure');
-  Writeln('  6 -  Time');
-  Writeln('  7 -  Speed');
-  Writeln('  8 -  Acceleration');
-  Writeln('  9 -  Force');
+  Writeln('  1  -  Length');
+  Writeln('  2  -  Area');
+  Writeln('  3  -  Volume');
+  Writeln('  4  -  Mass');
+  Writeln('  5  -  Pressure');
+  Writeln('  6  -  Time');
+  Writeln('  7  -  Speed');
+  Writeln('  8  -  Acceleration');
+  Writeln('  9  -  Force');
   Writeln('  10 -  Temperature');
   Writeln('  11 -  Energy');
   Writeln('  12 -  Power');
