@@ -23,11 +23,13 @@ begin
   Writeln('  10 -  Temperature');
   Writeln('  11 -  Energy');
   Writeln('  12 -  Power');
+  Writeln('  13 -  Quit');
   Writeln(' ');
   Write(' Enter a code: ');
   Read(Opcode);
   Writeln(' ');
   Writeln(' ');
+  if ((Opcode < 1) or (Opcode > 12)) then exit;
   Menu:
   case Opcode of
     1: begin
@@ -167,9 +169,8 @@ begin
     12: Output := Power(InputUnit, OutputUnit, Input);
   end;
   Write(' Output = ');
-  if (Output > 1E-3) AND (Output < 1E6) then Write(Output:10:3)
+  if (Output > 1E-3) and (Output < 1E6) then Write(Output:10:3)
   else Write(Output);
-  Writeln(' ');
   Writeln(' ');
   Writeln(' ');
   Writeln(' OPTIONS');
