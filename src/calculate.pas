@@ -47,19 +47,21 @@ var m2: Real;
 begin
   case InputUnit of
     1: m2 := Input; // m2
-    2: m2 := Input / 1550; // in2
-    3: m2 := Input / 10.76391; // ft2
-    4: m2 := Input / 1E-4; // ha
-    5: m2 := Input / 1E-6; // km2
-    6: m2 := Input / 3.86102E-7 ; // mi2
+    2: m2 := Input / 1E+4; // cm2
+    3: m2 := Input / 1550; // in2
+    4: m2 := Input / 10.76391; // ft2
+    5: m2 := Input / 1E-4; // ha
+    6: m2 := Input / 1E-6; // km2
+    7: m2 := Input / 3.86102E-7 ; // mi2
   end;
   case OutputUnit of
     1: Area := m2; // m2
-    2: Area := m2 * 1550; // in2
-    3: Area := m2 * 10.76391; // ft2
-    4: Area := m2 * 1E-4; // ha
-    5: Area := m2 * 1E-6; // km2
-    6: Area := m2 * 3.86102E-7 ; // mi2
+    2: Area := m2 * 1E+4; // cm2
+    3: Area := m2 * 1550; // in2
+    4: Area := m2 * 10.76391; // ft2
+    5: Area := m2 * 1E-4; // ha
+    6: Area := m2 * 1E-6; // km2
+    7: Area := m2 * 3.86102E-7 ; // mi2
   end;
 end;
 

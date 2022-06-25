@@ -3,7 +3,7 @@ uses Calculate;
 label Main, Menu, Conversion;
 
 var 
-  Opcode, Again, InputUnit, OutputUnit: LongInt;
+  Opcode, Option, InputUnit, OutputUnit: LongInt;
   Input, Output: Real;
 
 begin
@@ -48,17 +48,18 @@ begin
       Writeln(' AREA');
       Writeln(' ');
       Writeln('  1 -  square meter (m^2)');
-      Writeln('  2 -  square inch (in^2)');
-      Writeln('  3 -  square foot (ft^2)');
-      Writeln('  4 -  hectare (ha)');
-      Writeln('  5 -  square kilometer (km^2)');
-      Writeln('  6 -  square mile (mi^2)');
+      Writeln('  2 -  square centimeter (cm^2)');
+      Writeln('  3 -  square inch (in^2)');
+      Writeln('  4 -  square foot (ft^2)');
+      Writeln('  5 -  hectare (ha)');
+      Writeln('  6 -  square kilometer (km^2)');
+      Writeln('  7 -  square mile (mi^2)');
     end;
     3: begin
       Writeln(' VOLUME');
       Writeln(' ');
       Writeln('  1 -  cubic meter (m^3)');
-      Writeln('  2 -  milliliter (mL or cm^3)');
+      Writeln('  2 -  milliliter or cubic centimeter (mL or cm^3)');
       Writeln('  3 -  cubic inch (in^3)');
       Writeln('  4 -  fluid ounce (fl oz)');
       Writeln('  5 -  liter (L)');
@@ -181,10 +182,10 @@ begin
   Writeln('  4 -  Quit');
   Writeln(' ');
   Write(' Enter a option: ');
-  Read(Again);
+  Read(Option);
   Writeln(' ');
   Writeln(' ');
-  case (Again) of
+  case (Option) of
     1: goto Conversion;
     2: goto Menu;
     3: goto Main;
