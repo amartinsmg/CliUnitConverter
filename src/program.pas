@@ -100,8 +100,8 @@ begin
       Writeln(' ACCELERATION');
       Writeln(' ');
       Writeln('  1 -  meter/square second (m/s^2)');
-      Writeln('  2 -  kilometer/hour*second (km/h*s)');
-      Writeln('  3 -  foot/square second (ft/s^2)');
+      Writeln('  2 -  foot/min*second (ft/s^2)');
+      Writeln('  3 -  kilometer/hour*second (km/h*s)');
       Writeln('  4 -  mile/hour*second (mi/h*s)');
       Writeln('  5 -  knot/second (kn/s or kt/s)');
       Writeln('  6 -  acceleration of gravity (G)');
