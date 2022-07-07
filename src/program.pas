@@ -54,9 +54,9 @@ begin
       Writeln('  1 -  cubic meter (m^3)');
       Writeln('  2 -  milliliter or cubic centimeter (mL or cm^3)');
       Writeln('  3 -  cubic inch (in^3)');
-      Writeln('  4 -  fluid ounce (fl oz)');
+      Writeln('  4 -  fluid ounce(US) (fl oz)');
       Writeln('  5 -  liter (L)');
-      Writeln('  6 -  imperial gallon (imp gal)');
+      Writeln('  6 -  gallon(US) (gal)');
       Writeln('  7 -  cubic foot (ft^3)');
     end;
     4: begin
@@ -187,7 +187,7 @@ begin
           9: Output := Force(InputUnit, OutputUnit, Input);
           10: Output := Temperature(InputUnit, OutputUnit, Input);
           11: Output := Energy(InputUnit, OutputUnit, Input);
-          12: Output := Power(InputUnit, OutputUnit, Input);
+          12: Output := PowerC(InputUnit, OutputUnit, Input);
         end;
         Write(' Output = ');
         if (Output > 1E-3) and (Output < 1E6) then Write(Output:10:3)
