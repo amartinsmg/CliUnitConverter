@@ -1,9 +1,6 @@
 program test;
 uses Calculate, Math;
-
-const
-  str: String = 'Test fail';
-
+const str: String = 'Test fail';
 begin
   {$ASSERTIONS ON}
   Assert((SimpleRoundTo(Length(8, 6, 1), -3) = 1.852), str); // nmi -> km
@@ -23,5 +20,4 @@ begin
   Assert((SimpleRoundTo(Energy(4, 2, 1), -3) = 3600), str); // kW/h -> kJ
   Assert((SimpleRoundTo(PowerC(4, 2, 1), -3) = 2684.52), str); // hp -> kJ/h
   WriteLn('Passed all tests');
-
 end.

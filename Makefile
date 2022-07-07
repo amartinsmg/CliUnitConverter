@@ -12,3 +12,6 @@ compile_test: dir
 
 test: compile_test
 	build/test
+
+clean:
+	rm -f build/*
