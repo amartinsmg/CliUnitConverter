@@ -12,7 +12,7 @@ begin
   Assert((SimpleRoundTo(Mass(6, 5, 1), -3) = 2204.623), str); // t -> lb
   Assert((SimpleRoundTo(Mass(4, 3, 1), -3) = 28.35), str); // oz -> g
   Assert((SimpleRoundTo(Pressure(5, 4, 1), -3) = 1.013), str); // atm -> bar
-  Assert((SimpleRoundTo(Time(4, 3, 1), -3) = 24), str); // d -> h
+  Assert((SimpleRoundTo(Time(5, 3, 1), -3) = 8766), str); // y -> h
   Assert((SimpleRoundTo(Speed(4, 3, 1), -3) = 1.609), str); // mi/h -> km/h
   Assert((SimpleRoundTo(Acceleration(6, 3, 1), -3) = 35.304), str); // g -> km/h*s
   Assert((SimpleRoundTo(Force(4, 2, 1), -3) = 980665), str); // kgf -> dyn
