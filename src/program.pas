@@ -145,9 +145,9 @@ procedure Options();
 begin
   Writeln(' OPTIONS');
   Writeln(' ');
-  Writeln('  1 -  Perform another conversion');
-  Writeln('  2 -  Return to menu');
-  Writeln('  3 -  Return to main menu');
+  Writeln('  1 -  Do another conversion');
+  Writeln('  2 -  Return to the menu');
+  Writeln('  3 -  Return to the main menu');
   Writeln('  4 -  Quit');
 end;
 
@@ -172,7 +172,7 @@ begin
       Write(' to: ');
       Read(OutputUnit);
       repeat
-        Write(' Enter the value do you want to convert: ');
+        Write(' Enter the value you want to convert: ');
         Read(Input);
         Writeln(' ');
         case Opcode of
@@ -196,7 +196,7 @@ begin
         Writeln(' ');
         Options();
         Writeln(' ');
-        Write(' Enter a option: ');
+        Write(' Enter an option: ');
         Read(Option);
         Writeln(' ');
         Writeln(' ');
