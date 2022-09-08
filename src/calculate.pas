@@ -72,10 +72,10 @@ begin
     1: m3 := Input; // m3
     2: m3 := Input / 1E+6; // mL
     3: m3 := Input / 61023.744095; // in3
-    4: m3 := Input / 33814.0227; // fl oz
+    4: m3 := Input / 33814.022702; // fl oz
     5: m3 := Input / 1000; // L
     6: m3 := Input / 264.172052 ; // gal
-    7: m3 := Input / 35.31467; // ft3
+    7: m3 := Input / 35.314667; // ft3
   end;
   case OutputUnit of
     1: Volume := m3; // m3
@@ -115,14 +115,14 @@ begin
   case InputUnit of
     1: Pa := Input; // Pa
     2: Pa := Input * 133.322; // mmHg
-    3: Pa := Input * 6894.76; // psi
+    3: Pa := Input * 6894.757293; // psi
     4: Pa := Input * 1E+5; // bar
     5: Pa := Input * 101325; // atm
   end;
   case OutputUnit of
     1: Pressure := Pa; // Pa
     2: Pressure := Pa / 133.322; // mmHg
-    3: Pressure := Pa / 6894.76; // psi
+    3: Pressure := Pa / 6894.757293; // psi
     4: Pressure := Pa / 1E+5; // bar
     5: Pressure := Pa / 101325; // atm
   end;
@@ -210,12 +210,12 @@ begin
   case InputUnit of
     1: K := Input; // K
     2: K := Input + 273.15; // C
-    3: K := (Input - 32) * 5/9 + 273.15 ; // F
+    3: K := (Input - 32) * 5 / 9 + 273.15 ; // F
   end;
   case OutputUnit of
     1: Temperature := K; // K
     2: Temperature := K - 273.15; // C
-    3: Temperature := (K - 273.15) * 9/5 + 32; // F
+    3: Temperature := (K - 273.15) * 9 / 5 + 32; // F
   end;
 end;
 
@@ -243,14 +243,14 @@ begin
     1: W := Input; // W
     2: W := Input / 3.6; // kJ/h
     3: W := Input * 1.163; // kcal/h
-    4: W := Input * 745.7; // hp
+    4: W := Input * 745.699872; // hp
     5: W := Input * 1000; // kW
   end;
   case OutputUnit of
     1: PowerC := W; // W
     2: PowerC := W * 3.6; // kJ/h
     3: PowerC := W / 1.163; // kcal/h
-    4: PowerC := W / 745.7; // hp
+    4: PowerC := W / 745.699872; // hp
     5: PowerC := W / 1000; // kW
   end;
 end;
