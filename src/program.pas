@@ -3,8 +3,7 @@ uses Calculate;
 
 procedure MainMenu();
 begin
-  Writeln(' UNIT CONVERTER');
-  Writeln(' ');
+  Writeln(' UNIT CONVERTER' + sLineBreak);
   Writeln('  1  -  Length');
   Writeln('  2  -  Area');
   Writeln('  3  -  Volume');
@@ -17,8 +16,7 @@ begin
   Writeln('  10 -  Temperature');
   Writeln('  11 -  Energy');
   Writeln('  12 -  Power');
-  Writeln('  13 -  Quit');
-  Writeln(' ');
+  Writeln('  13 -  Quit' + sLineBreak);
 end;
 
 
@@ -26,8 +24,7 @@ procedure Menus(Opcode: LongInt);
 begin
   case Opcode of
     1: begin
-      Writeln(' LENGTH');
-      Writeln(' ');
+      Writeln(' LENGTH' + sLineBreak);
       Writeln('  1 -  meter (m)');
       Writeln('  2 -  millimeter (mm)');
       Writeln('  3 -  centimeter (cm)');
@@ -38,8 +35,7 @@ begin
       Writeln('  8 -  nautical mile (nmi)');
     end;
     2: begin
-      Writeln(' AREA');
-      Writeln(' ');
+      Writeln(' AREA' + sLineBreak);
       Writeln('  1 -  square meter (m^2)');
       Writeln('  2 -  square centimeter (cm^2)');
       Writeln('  3 -  square inch (in^2)');
@@ -49,8 +45,7 @@ begin
       Writeln('  7 -  square mile (mi^2)');
     end;
     3: begin
-      Writeln(' VOLUME');
-      Writeln(' ');
+      Writeln(' VOLUME' + sLineBreak);
       Writeln('  1 -  cubic meter (m^3)');
       Writeln('  2 -  milliliter or cubic centimeter (mL or cm^3)');
       Writeln('  3 -  cubic inch (in^3)');
@@ -60,8 +55,7 @@ begin
       Writeln('  7 -  cubic foot (ft^3)');
     end;
     4: begin
-      Writeln(' MASS');
-      Writeln(' ');
+      Writeln(' MASS' + sLineBreak);
       Writeln('  1 -  kilogram (kg)');
       Writeln('  2 -  milligram (mg)');
       Writeln('  3 -  gram (g)');
@@ -70,8 +64,7 @@ begin
       Writeln('  6 -  tonne (t)');
     end;
     5: begin
-      Writeln(' PRESSURE');
-      Writeln(' ');
+      Writeln(' PRESSURE' + sLineBreak);
       Writeln('  1 -  pascal (Pa)');
       Writeln('  2 -  millimeter of mercury (mmHg)');
       Writeln('  3 -  psi');
@@ -79,8 +72,7 @@ begin
       Writeln('  5 -  standard atmosphere (atm)');
     end;
     6: begin
-      Writeln(' TIME');
-      Writeln(' ');
+      Writeln(' TIME' + sLineBreak);
       Writeln('  1 -  second (s)');
       Writeln('  2 -  minute (min)');
       Writeln('  3 -  hour (h)');
@@ -88,8 +80,7 @@ begin
       Writeln('  5 -  year (y)');
     end;
     7: begin
-      Writeln(' SPEED');
-      Writeln(' ');
+      Writeln(' SPEED' + sLineBreak);
       Writeln('  1 -  meter/second (m/s)');
       Writeln('  2 -  foot/minute (ft/min)');
       Writeln('  3 -  kilometer/hour (km/h)');
@@ -97,8 +88,7 @@ begin
       Writeln('  5 -  knot (kn or kt)');
     end;
     8: begin
-      Writeln(' ACCELERATION');
-      Writeln(' ');
+      Writeln(' ACCELERATION' + sLineBreak);
       Writeln('  1 -  meter/square second (m/s^2)');
       Writeln('  2 -  foot/min*second (ft/s^2)');
       Writeln('  3 -  kilometer/hour*second (km/h*s)');
@@ -107,31 +97,27 @@ begin
       Writeln('  6 -  acceleration of gravity (G)');
     end;
     9: begin
-      Writeln(' FORCE');
-      Writeln(' ');
+      Writeln(' FORCE' + sLineBreak);
       Writeln('  1 -  newton (N)');
       Writeln('  2 -  dyne (dyn)');
       Writeln('  3 -  pound-force (lbf)');
       Writeln('  4 -  kilometer-force (kmf)');
     end;
     10: begin
-      Writeln(' TEMPERATURE');
-      Writeln(' ');
+      Writeln(' TEMPERATURE' + sLineBreak);
       Writeln('  1 -  kelvin (k)');
       Writeln('  2 -  Celsius (C)');
       Writeln('  3 -  Fahrenheit (F)');
     end;
     11: begin
-      Writeln(' ENERGY');
-      Writeln(' ');
+      Writeln(' ENERGY' + sLineBreak);
       Writeln('  1 -   joule (J)');
       Writeln('  2 -   kilojoule (kJ)');
       Writeln('  3 -   kilocalorie (kcal)');
       Writeln('  4 -   kilowatt/hour (kW/h)');
     end;
     12: begin
-      Writeln(' POWER');
-      Writeln(' ');
+      Writeln(' POWER' + sLineBreak);
       Writeln('  1 - watt (W)');
       Writeln('  2 - kilojoule/hour (kJ/h)');
       Writeln('  3 - kilocalore/hour (kcal/h)');
@@ -143,8 +129,7 @@ end;
 
 procedure Options();
 begin
-  Writeln(' OPTIONS');
-  Writeln(' ');
+  Writeln(' OPTIONS' + sLineBreak);
   Writeln('  1 -  Do another conversion');
   Writeln('  2 -  Return to the menu');
   Writeln('  3 -  Return to the main menu');
@@ -156,25 +141,23 @@ var
   Input, Output: Real;
 
 begin
-  Writeln(' ');
+  Write(sLineBreak);
   repeat
     MainMenu();
     Write(' Enter a code: ');
     Read(Opcode);
-    Writeln(' ');
-    Writeln(' ');
+    Write(sLineBreak + sLineBreak);
     if ((Opcode < 1) or (Opcode > 12)) then exit;
     repeat
       Menus(Opcode);
-      Writeln(' ');
-      Write(' Convert from: ');  
+      Write(sLineBreak + ' Convert from: ');  
       Read(InputUnit);
       Write(' to: ');
       Read(OutputUnit);
       repeat
         Write(' Enter the value you want to convert: ');
         Read(Input);
-        Writeln(' ');
+        Write(sLineBreak);
         case Opcode of
           1: Output := Length(InputUnit, OutputUnit, Input);
           2: Output := Area(InputUnit, OutputUnit, Input);
@@ -192,14 +175,11 @@ begin
         Write(' Output = ');
         if (Output > 1E-3) and (Output < 1E6) then Write(Output:10:3)
         else Write(Output);
-        Writeln(' ');
-        Writeln(' ');
+        Write(sLineBreak + sLineBreak);
         Options();
-        Writeln(' ');
-        Write(' Enter an option: ');
+        Write(sLineBreak + ' Enter an option: ');
         Read(Option);
-        Writeln(' ');
-        Writeln(' ');
+        Write(sLineBreak + sLineBreak);
       until (Option <> 1);
     until (Option <> 2);
   until (Option <> 3);
