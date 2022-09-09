@@ -65,7 +65,7 @@ begin
     end;
     5: begin
       Writeln(' PRESSURE' + sLineBreak);
-      Writeln('  1 -  pascal (Pa)');
+      Writeln('  1 -  pascal e Newton per square meter (Pa or N/m^2)');
       Writeln('  2 -  millimeter of mercury (mmHg)');
       Writeln('  3 -  psi');
       Writeln('  4 -  bar');
@@ -81,24 +81,24 @@ begin
     end;
     7: begin
       Writeln(' SPEED' + sLineBreak);
-      Writeln('  1 -  meter/second (m/s)');
-      Writeln('  2 -  foot/minute (ft/min)');
-      Writeln('  3 -  kilometer/hour (km/h)');
-      Writeln('  4 -  mile/hour (m/hi)');
+      Writeln('  1 -  meter per second (m/s)');
+      Writeln('  2 -  foot per minute (ft/min)');
+      Writeln('  3 -  kilometer per hour (km/h)');
+      Writeln('  4 -  mile per hour (m/hi)');
       Writeln('  5 -  knot (kn or kt)');
     end;
     8: begin
       Writeln(' ACCELERATION' + sLineBreak);
-      Writeln('  1 -  meter/square second (m/s^2)');
-      Writeln('  2 -  foot/min*second (ft/s^2)');
-      Writeln('  3 -  kilometer/hour*second (km/h*s)');
-      Writeln('  4 -  mile/hour*second (mi/h*s)');
-      Writeln('  5 -  knot/second (kn/s or kt/s)');
+      Writeln('  1 -  meter per square second (m/s^2)');
+      Writeln('  2 -  foot per min per second (ft/min/s)');
+      Writeln('  3 -  kilometer per hour per second (km/h/s)');
+      Writeln('  4 -  mile per hour per second (mi/h/s)');
+      Writeln('  5 -  knot per second (kn/s or kt/s)');
       Writeln('  6 -  acceleration of gravity (G)');
     end;
     9: begin
       Writeln(' FORCE' + sLineBreak);
-      Writeln('  1 -  newton (N)');
+      Writeln('  1 -  Newton (N)');
       Writeln('  2 -  dyne (dyn)');
       Writeln('  3 -  pound-force (lbf)');
       Writeln('  4 -  kilometer-force (kmf)');
@@ -114,13 +114,13 @@ begin
       Writeln('  1 -   joule (J)');
       Writeln('  2 -   kilojoule (kJ)');
       Writeln('  3 -   kilocalorie (kcal)');
-      Writeln('  4 -   kilowatt/hour (kW/h)');
+      Writeln('  4 -   kilowatt per hour (kW/h)');
     end;
     12: begin
       Writeln(' POWER' + sLineBreak);
       Writeln('  1 - watt (W)');
-      Writeln('  2 - kilojoule/hour (kJ/h)');
-      Writeln('  3 - kilocalore/hour (kcal/h)');
+      Writeln('  2 - kilojoule per hour (kJ/h)');
+      Writeln('  3 - kilocalorie per hour (kcal/h)');
       Writeln('  4 - hoursepower (hp)');
       Writeln('  5 - kilowatt (kW)');
     end;
