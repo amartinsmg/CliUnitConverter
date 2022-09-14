@@ -10,7 +10,7 @@ make
 
 <sub>**Note**: Before compiling, make sure you have installed [Free Pascal Compiler](https://wiki.freepascal.org/Installing_the_Free_Pascal_Compiler) and its [cross-compiling](https://wiki.freepascal.org/Cross_compiling).</sub>
 
-To compile and run the tests, use this commands:
+To compile and run the tests, use these commands:
 
 ```sh
 make test
