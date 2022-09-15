@@ -1,6 +1,6 @@
 # UnitConverter
 
-This is a personal project for an command line interface unit converter. It's made using Pascal language and can convert units of length, area, volume, mass, pressure, time, speed, acceleration, force, temperature, energy, and power.
+This is a personal project for a command line interface unit converter. It's made using Pascal language and can convert units of length, area, volume, mass, pressure, time, speed, acceleration, force, temperature, energy, and power.
 
 To compile the program use this command:
 
