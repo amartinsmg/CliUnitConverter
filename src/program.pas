@@ -65,7 +65,7 @@ begin
     end;
     5: begin
       Writeln(' PRESSURE' + sLineBreak);
-      Writeln('  1 -  pascal e Newton per square meter (Pa or N/m^2)');
+      Writeln('  1 -  Pascal or Newton per square meter (Pa or N/m^2)');
       Writeln('  2 -  millimeter of mercury (mmHg)');
       Writeln('  3 -  psi');
       Writeln('  4 -  bar');
@@ -85,7 +85,7 @@ begin
       Writeln('  2 -  foot per minute (ft/min)');
       Writeln('  3 -  kilometer per hour (km/h)');
       Writeln('  4 -  mile per hour (m/hi)');
-      Writeln('  5 -  knot (kn or kt)');
+      Writeln('  5 -  knot or nautical mile per hour (kn or kt or nmi/h)');
     end;
     8: begin
       Writeln(' ACCELERATION' + sLineBreak);
@@ -101,7 +101,7 @@ begin
       Writeln('  1 -  Newton (N)');
       Writeln('  2 -  dyne (dyn)');
       Writeln('  3 -  pound-force (lbf)');
-      Writeln('  4 -  kilometer-force (kmf)');
+      Writeln('  4 -  kilometer-force (kgf)');
     end;
     10: begin
       Writeln(' TEMPERATURE' + sLineBreak);
