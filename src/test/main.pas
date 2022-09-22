@@ -1,6 +1,6 @@
 program test;
 uses Calculate, Math;
-const str: String = 'Test fail';
+const str: String = 'Test failed';
 begin
   {$ASSERTIONS ON}
   Assert((SimpleRoundTo(Length(8, 6, 1), -3) = 1.852), str); // nmi -> km
