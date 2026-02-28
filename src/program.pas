@@ -178,15 +178,15 @@ Var
 Begin
   Write(sLineBreak);
   Repeat
-    Option := 3;
     MainMenu();
     Write(' Enter a code: ');
     Read(Opcode);
     Write(sLineBreak, sLineBreak);
-    If (Opcode = 13) Then exit;
+    If (Opcode = 13) Then Exit;
     If ((Opcode < 1) Or (Opcode > 13)) Then
     Begin
       Writeln('Invalid option!', sLineBreak);
+      Option := 3;
       Continue;
     End;
     Repeat
@@ -206,7 +206,7 @@ Begin
           Else Write(Output);
           Write(sLineBreak, sLineBreak);
         Except
-          on E: Exception do
+          On E: Exception Do
             Begin
               Writeln('An error was encountered, or an invalid option was selected.');
               Writeln('Error: ', E.Message, sLineBreak);
@@ -219,7 +219,7 @@ Begin
         If ((Option <= 0) Or (Option > 4)) Then
         Begin
           Writeln('Invalid Option, exiting the program!', sLineBreak);
-          exit;
+          Exit;
         End;
       Until (Option <> 1);
     Until (Option <> 2);
