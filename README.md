@@ -1,18 +1,63 @@
 # CliUnitConverter
 
-This is a personal project for a command line interface unit converter. It's made using Pascal language and can convert units of length, area, volume, mass, pressure, time, speed, acceleration, force, temperature, energy, and power.
+A simple command-line unit converter written in **Pascal**.
 
-To compile the program use this command:
+This project was built to explore the Free Pascal Compiler (FPC), modular program structure, and structured error handling in a procedural context.
+
+## Suppported Conversions
+
+- Length
+- Area
+- Volume
+- Mass
+- Pressure
+- Time
+- Speed
+- Acceleration
+- Force
+- Temperature
+- Energy
+- Power
+
+## Requirements
+
+- Free Pascal Compiler (FPC)
+  https://wiki.freepascal.org/Installing_the_Free_Pascal_Compiler
+
+- Optional (for cross-platform builds):
+  https://wiki.freepascal.org/Cross_compiling
+
+## Build
 
 ```sh
 make
 ```
 
-<sub>**Note**: Before compiling, make sure you have installed [Free Pascal Compiler](https://wiki.freepascal.org/Installing_the_Free_Pascal_Compiler) and its [cross-compiling](https://wiki.freepascal.org/Cross_compiling).</sub>
+## Run
 
-To compile and run the tests, use these commands:
+```sh
+./build/UnitConverter
+```
+
+## Tests
 
 ```sh
 make test
-build/test
+./build/test
 ```
+
+## Implementation Notes
+
+- Conversion logic is separated from the CLI interface.
+- Most units are normalized to a base unit before conversion.
+- Temperature conversions use formula-based transformations.
+- Input validation and range checks are handled in the calculation layer.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE.md) file for details.
+
+## Contributing
+
+Contributions are welcome!
+If you find a bug or have a feature request, feel free to open an issue or submit a pull request.
