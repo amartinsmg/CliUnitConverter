@@ -2,8 +2,10 @@
 Program test;
 
 Uses Calculate, Math;
+
+{$ASSERTIONS ON}
+
 Begin
-  {$ASSERTIONS ON}
   Assert(SameValue(SimpleRoundTo(Length(8, 6, 1), -3), 1.852, 0.0001), 'Test 1: Failed!');
   // nmi -> km
   Assert(SameValue(SimpleRoundTo(Length(5, 4, 1), -3), 12, 0.0001), 'Test 2: Failed!');
