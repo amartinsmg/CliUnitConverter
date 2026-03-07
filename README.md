@@ -43,7 +43,6 @@ make
 
 ```sh
 make test
-./build/test
 ```
 
 ## Implementation Notes
