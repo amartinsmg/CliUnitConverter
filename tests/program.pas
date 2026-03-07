@@ -1,11 +1,12 @@
 
-Program test;
+program Test;
 
-Uses Calculate, Math;
+
+uses Calculate, Math;
 
 {$ASSERTIONS ON}
 
-Begin
+begin
   Assert(SameValue(SimpleRoundTo(Length(8, 6, 1), -3), 1.852, 0.0001), 'Test 1: Failed!');
   // nmi -> km
   Assert(SameValue(SimpleRoundTo(Length(5, 4, 1), -3), 12, 0.0001), 'Test 2: Failed!');
@@ -39,4 +40,4 @@ Begin
   Assert(SameValue(SimpleRoundTo(PowerC(4, 2, 1), -3), 2684.52, 0.0001), 'Test 16: Failed!');
   // hp -> kJ/h
   WriteLn('Passed all tests successfully!', sLineBreak);
-End.
+end.
