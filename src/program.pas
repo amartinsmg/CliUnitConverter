@@ -24,9 +24,9 @@ begin
 end;
 
 
-procedure Menus(Opcode: LongInt);
+procedure Menus(opcode: LongInt);
 begin
-  case Opcode of 
+  case opcode of 
     1:
        begin
          WriteLn(' LENGTH' + sLineBreak);
@@ -152,58 +152,58 @@ begin
   WriteLn('  4 -  Quit');
 end;
 
-Function Converter(Opcode, InputUnit, OutputUnit: LongInt; Input: Real): Real;
+function Converter(opcode, inputUnit, outputUnit: LongInt; input: Real): Real;
 begin
-  case Opcode of 
-    1: Converter := Length(InputUnit, OutputUnit, Input);
-    2: Converter := Area(InputUnit, OutputUnit, Input);
-    3: Converter := Volume(InputUnit, OutputUnit, Input);
-    4: Converter := Mass(InputUnit, OutputUnit, Input);
-    5: Converter := Pressure(InputUnit, OutputUnit, Input);
-    6: Converter := TimeC(InputUnit, OutputUnit, Input);
-    7: Converter := Speed(InputUnit, OutputUnit, Input);
-    8: Converter := Acceleration(InputUnit, OutputUnit, Input);
-    9: Converter := Force(InputUnit, OutputUnit, Input);
-    10: Converter := Temperature(InputUnit, OutputUnit, Input);
-    11: Converter := Energy(InputUnit, OutputUnit, Input);
-    12: Converter := PowerC(InputUnit, OutputUnit, Input);
+  case opcode of 
+    1: Converter := Length(inputUnit, outputUnit, input);
+    2: Converter := Area(inputUnit, outputUnit, input);
+    3: Converter := Volume(inputUnit, outputUnit, input);
+    4: Converter := Mass(inputUnit, outputUnit, input);
+    5: Converter := Pressure(inputUnit, outputUnit, input);
+    6: Converter := TimeC(inputUnit, outputUnit, input);
+    7: Converter := Speed(inputUnit, outputUnit, input);
+    8: Converter := Acceleration(inputUnit, outputUnit, input);
+    9: Converter := Force(inputUnit, outputUnit, input);
+    10: Converter := Temperature(inputUnit, outputUnit, input);
+    11: Converter := Energy(inputUnit, outputUnit, input);
+    12: Converter := PowerC(inputUnit, outputUnit, input);
   end;
 end;
 
 
-Var 
-  Opcode, Option, InputUnit, OutputUnit: LongInt;
-  Input, Output: Real;
+var 
+  opcode, option, inputUnit, outputUnit: LongInt;
+  input, output: Real;
 
 begin
   Write(sLineBreak);
   repeat
     MainMenu();
     Write(' Enter a code: ');
-    Read(Opcode);
+    Read(opcode);
     Write(sLineBreak, sLineBreak);
-    if (Opcode = 13) then exit;
-    if ((Opcode < 1) or (Opcode > 13)) then
+    if (opcode = 13) then exit;
+    if ((opcode < 1) or (opcode > 13)) then
     begin
       WriteLn('Invalid option!', sLineBreak);
-      Option := 3;
+      option := 3;
       continue;
     end;
     repeat
-      Menus(Opcode);
+      Menus(opcode);
       Write(sLineBreak + ' Convert from: ');
-      Read(InputUnit);
+      Read(inputUnit);
       Write(' to: ');
-      Read(OutputUnit);
+      Read(outputUnit);
       repeat
         Write(' Enter the value you want to convert: ');
-        Read(Input);
+        Read(input);
         Write(sLineBreak);
         try
-          Output := Converter(Opcode, InputUnit, OutputUnit, Input);
+          output := Converter(opcode, inputUnit, outputUnit, input);
           Write(' Result = ');
-          if (Output > 1E-3) And (Output < 1E6) then Write(Output:10:3)
-          else Write(Output);
+          if (output > 1E-3) And (output < 1E6) then Write(output:10:3)
+          else Write(output);
           Write(sLineBreak, sLineBreak);
         except
           on E: Exception do
@@ -214,14 +214,14 @@ begin
         end;
         Options();
         Write(sLineBreak, ' Enter an option: ');
-        Read(Option);
+        Read(option);
         Write(sLineBreak, sLineBreak);
-        if ((Option <= 0) or (Option > 4)) then
+        if ((option <= 0) or (option > 4)) then
         begin
-          WriteLn('Invalid Option, exiting the program!', sLineBreak);
+          WriteLn('Invalid option, exiting the program!', sLineBreak);
           exit;
         end;
-      until (Option <> 1);
-    until (Option <> 2);
-  until (Option <> 3);
+      until (option <> 1);
+    until (option <> 2);
+  until (option <> 3);
 end.
