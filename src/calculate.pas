@@ -1,27 +1,27 @@
 
-Unit Calculate;
+unit Calculate;
 
-Interface
+interface
 
-Function Length(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Area(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Volume(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Mass(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Pressure(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function TimeC(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Speed(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Acceleration(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Force(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Temperature(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function Energy(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
-Function PowerC(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Length(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Area(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Volume(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Mass(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Pressure(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function TimeC(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Speed(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Acceleration(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Force(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Temperature(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Energy(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function PowerC(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Implementation
+implementation
 
 {$R+}
 
-Const 
-  LengthFactors: array[1..8] Of Real = (
+const 
+  LengthFactors: Array[1..8] of Real = (
                                         1,                    // m
                                         0.001,                // mm
                                         0.01,                 // cm
@@ -31,7 +31,7 @@ Const
                                         1609.35,              // mi
                                         1852                  // nmi
                                        );
-  AreaFactors: array[1..7] Of Real = (
+  AreaFactors: Array[1..7] of Real = (
                                       1,                      // m^2
                                       1E-4,                   // cm^2
                                       6.45161E-4,             // in^2
@@ -40,7 +40,7 @@ Const
                                       1E+6,                   // km^2
                                       2589990                 // mi^2
                                      );
-  VolumeFactors: array[1..7] Of Real = (
+  VolumeFactors: Array[1..7] of Real = (
                                         1,                    // m^3
                                         1E+6,                 // mL
                                         61023.744095,         // in^3
@@ -49,7 +49,7 @@ Const
                                         264.172052 ,          // gal
                                         35.314667             // ft^3
                                        );
-  MassFactors: array[1..6] Of Real = (
+  MassFactors: Array[1..6] of Real = (
                                       1,                      // kg
                                       1E+6,                   // mg
                                       1000,                   // g
@@ -57,28 +57,28 @@ Const
                                       2.204623,               // lb
                                       1E-3                    // t
                                      );
-  PressureFactors: array[1..5] Of Real = (
+  PressureFactors: Array[1..5] of Real = (
                                           1,                  // Pa
                                           133.322,            // mmHg
                                           6894.757293,        // psi
                                           1E+5,               // bar
                                           101325              // atm
                                          );
-  TimeFactors: array[1..5] Of Real = (
+  TimeFactors: Array[1..5] of Real = (
                                       1,                      // s
                                       60,                     // min
                                       3600,                   // h
                                       86400,                  // d
                                       31557600                // y
                                      );
-  SpeedFactors: array[1..5] Of Real = (
+  SpeedFactors: Array[1..5] of Real = (
                                        1,                     // m/s
                                        196.850394,            // ft/min
                                        3.6,                   // km/h
                                        2.23694,               // mi/h
                                        1.94384                // kn
                                       );
-  AccelerationFactors: array[1..6] Of Real = (
+  AccelerationFactors: Array[1..6] of Real = (
                                               1,              // m/s^2
                                               196.850394,     // ft/(min*s)
                                               3.6,            // km/(h*s)
@@ -86,19 +86,19 @@ Const
                                               1.943845,       // kn/s
                                               0.101971        // G
                                              );
-  ForceFactors: array[1..4] Of Real = (
+  ForceFactors: Array[1..4] of Real = (
                                        1,                     // N
                                        1E-5,                  // dyn
                                        4.448221,              // lbf
                                        9.80665                // kgf
                                       );
-  EnergyFactors: array[1..4] Of Real = (
+  EnergyFactors: Array[1..4] of Real = (
                                         1,                    // J
                                         1000,                 // kJ
                                         4184,                 // kcal
                                         3.6E+6                // kW/h
                                        );
-  PowerFactors: array[1..5] Of Real = (
+  PowerFactors: Array[1..5] of Real = (
                                        1,                     // W
                                        0.27777778,            // kJ/h
                                        1.163,                 // kcal/h
@@ -108,116 +108,116 @@ Const
 
 
 
-Function Length(InputUnit, OutputUnit: LongInt; Input: Real): Real;
+function Length(InputUnit, OutputUnit: LongInt; Input: Real): Real;
 
-Var BaseValue: Real;
-Begin
+var BaseValue: Real;
+begin
   BaseValue := Input * LengthFactors[InputUnit];
   Length := BaseValue / LengthFactors[OutputUnit];
-End;
+end;
 
-Function Area(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Area(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue: Real;
-Begin
+var BaseValue: Real;
+begin
   BaseValue := Input * AreaFactors[InputUnit] ;
   Area := BaseValue / AreaFactors[OutputUnit] ;
-End;
+end;
 
-Function Volume(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Volume(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue: Real;
-Begin
+var BaseValue: Real;
+begin
   BaseValue := Input / VolumeFactors[InputUnit] ;
   Volume := BaseValue * VolumeFactors[OutputUnit] ;
-End;
+end;
 
-Function Mass(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Mass(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue: Real;
-Begin
+var BaseValue: Real;
+begin
   BaseValue := Input / MassFactors[InputUnit] ;
   Mass := BaseValue * MassFactors[OutputUnit] ;
-End;
+end;
 
-Function Pressure(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Pressure(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue : Real;
-Begin
+var BaseValue : Real;
+begin
   BaseValue := Input * PressureFactors[InputUnit] ;
   Pressure := BaseValue / PressureFactors[OutputUnit] ;
-End;
+end;
 
-Function TimeC(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function TimeC(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue: Real;
-Begin
+var BaseValue: Real;
+begin
   BaseValue := Input * TimeFactors[InputUnit];
   TimeC := BaseValue / TimeFactors[OutputUnit];
-End;
+end;
 
-Function Speed(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Speed(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue: Real;
-Begin
+var BaseValue: Real;
+begin
   BaseValue := Input / SpeedFactors[InputUnit] ;
   Speed := BaseValue * SpeedFactors[OutputUnit] ;
-End;
+end;
 
-Function Acceleration(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Acceleration(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue : Real;
-Begin
+var BaseValue : Real;
+begin
   BaseValue := Input / AccelerationFactors[InputUnit] ;
   Acceleration := BaseValue * AccelerationFactors[OutputUnit] ;
-End;
+end;
 
-Function Force(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Force(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue : Real;
-Begin
+var BaseValue : Real;
+begin
   BaseValue := Input * ForceFactors[InputUnit];
   Force := BaseValue / ForceFactors[OutputUnit];
-End;
+end;
 
-Function Temperature(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Temperature(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue: Real;
-Begin
-  Case InputUnit Of 
+var BaseValue: Real;
+begin
+  Case InputUnit of 
     1: BaseValue := Input;
     // Kelvin
     2: BaseValue := Input + 273.15;
     // Celsius
     3: BaseValue := (Input - 32) * 5 / 9 + 273.15 ;
     // Fahrenheit
-  End;
-  Case OutputUnit Of 
+  end;
+  Case OutputUnit of 
     1: Temperature := BaseValue;
     // Kelvin
     2: Temperature := BaseValue - 273.15;
     // Celsius
     3: Temperature := (BaseValue - 273.15) * 9 / 5 + 32;
     // Fahrenheit
-  End;
-End;
+  end;
+end;
 
-Function Energy(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function Energy(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue : Real;
-Begin
+var BaseValue : Real;
+begin
   BaseValue := Input * EnergyFactors[InputUnit];
   Energy := BaseValue / EnergyFactors[OutputUnit];
-End;
+end;
 
-Function PowerC(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
+function PowerC(InputUnit, OutputUnit: LongInt; Input: Real) : Real;
 
-Var BaseValue : Real;
-Begin
+var BaseValue : Real;
+begin
   BaseValue := Input * PowerFactors[InputUnit];
   PowerC := BaseValue / PowerFactors[OutputUnit];
-End;
+end;
 
 {$R-}
 
-End.
+end.
